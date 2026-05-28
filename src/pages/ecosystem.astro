@@ -238,6 +238,13 @@ const typeScriptLibraries: Project[] = [
     desc: 'Modern WASM bindings for libopus raw packet encode/decode.',
     repo: 'https://github.com/openclaw/libopus-wasm',
   },
+  {
+    name: 'clawpdf',
+    icon: 'lucide:file-code',
+    color: SAND,
+    desc: 'PDF parsing and rendering tools for claws.',
+    repo: 'https://github.com/openclaw/clawpdf',
+  },
 ];
 
 // Native tools — macOS / iOS / CLI utilities
@@ -320,7 +327,6 @@ const everythingElse: Project[] = [
   { name: 'Swabble', icon: 'lucide:wand', color: ROSE, desc: 'Swift version of brabble.dev.', repo: 'https://github.com/openclaw/Swabble' },
   { name: 'caclawphony', icon: 'lucide:workflow', color: CYAN, desc: 'Symphony: isolated, autonomous implementation runs.', repo: 'https://github.com/openclaw/caclawphony' },
   { name: 'clownfish', icon: 'lucide:sparkles', color: CORAL, desc: 'Maintainer codex harness for resolving issue clusters at scale.', repo: 'https://github.com/openclaw/clownfish' },
-  { name: 'clawpdf', icon: 'lucide:file-code', color: SAND, desc: 'PDF tools for claws.', repo: 'https://github.com/openclaw/clawpdf' },
   { name: 'openclaw-rtt', icon: 'lucide:gauge', color: LIME, desc: 'RTT timing measurements across OpenClaw npm releases.', repo: 'https://github.com/openclaw/openclaw-rtt' },
   { name: 'openclaw-windows-node', icon: 'lucide:monitor', color: '#0078D4', desc: 'Windows companion suite: tray app, library, Node, PowerToys.', repo: 'https://github.com/openclaw/openclaw-windows-node' },
   { name: 'clawdex', icon: 'lucide:users', color: CYAN_DEEP, desc: 'Contacts for claws.', repo: 'https://github.com/openclaw/clawdex' },
@@ -408,6 +414,7 @@ const siteByName: Record<string, string> = {
   'fs-safe': 'https://fs-safe.io',
   proxyline: 'https://proxyline.dev',
   'libopus-wasm': 'https://libopus-wasm.dev',
+  clawpdf: 'https://clawpdf.dev',
   'esp-openclaw-node': 'https://openclaw.github.io/esp-openclaw-node/',
   Swabble: 'https://swabble.ai',
   clawdex: 'https://clawdex.sh',
@@ -829,8 +836,8 @@ function logoSrc(project: Project) {
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(180deg, transparent 34%, color-mix(in srgb, var(--bg-deep) 38%, transparent)),
-      linear-gradient(90deg, color-mix(in srgb, var(--bg-deep) 10%, transparent), transparent 58%);
+      linear-gradient(180deg, transparent 42%, color-mix(in srgb, var(--bg-deep) 24%, transparent)),
+      linear-gradient(90deg, color-mix(in srgb, var(--bg-deep) 5%, transparent), transparent 60%);
   }
 
   .card-art.banner-missing::after {
@@ -845,8 +852,8 @@ function logoSrc(project: Project) {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.84;
-    filter: saturate(1.12) contrast(1.06) brightness(1.04);
+    opacity: 0.96;
+    filter: saturate(1.18) contrast(1.08) brightness(1.06);
   }
 
   .logo-badge {
@@ -1169,5 +1176,115 @@ function logoSrc(project: Project) {
       width: 36px;
       height: 36px;
     }
+  }
+
+  /* ─── Light mode overrides ─────────────────────────────────────────────
+     The banner illustrations were drawn against a dark space backdrop, so
+     we keep the card-art zone dark in both themes. Everything else picks
+     up legible surface/text tones from the theme. */
+
+  html[data-theme='light'] .anchor-chip {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+
+  html[data-theme='light'] .anchor-chip:hover {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 14px color-mix(in srgb, var(--coral-bright) 18%, transparent);
+  }
+
+  html[data-theme='light'] .card {
+    background:
+      linear-gradient(180deg, color-mix(in srgb, var(--accent, var(--coral-bright)) 6%, transparent), transparent 38%),
+      rgba(255, 255, 255, 0.94);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+
+  html[data-theme='light'] .card:hover {
+    box-shadow: 0 14px 36px color-mix(in srgb, var(--accent, var(--coral-bright)) 28%, transparent);
+  }
+
+  /* Force card-art to stay dark so banner illustrations pop in both themes. */
+  html[data-theme='light'] .card-art {
+    background:
+      radial-gradient(circle at 82% 20%, color-mix(in srgb, var(--accent, var(--coral-bright)) 36%, transparent), transparent 38%),
+      linear-gradient(135deg, color-mix(in srgb, var(--accent, var(--coral-bright)) 22%, #0a0f1a), #050810);
+    border-bottom: 1px solid color-mix(in srgb, var(--accent, var(--coral-bright)) 30%, rgba(15, 23, 42, 0.4));
+  }
+
+  html[data-theme='light'] .card-art::after {
+    background:
+      linear-gradient(180deg, transparent 42%, rgba(5, 8, 16, 0.32)),
+      linear-gradient(90deg, rgba(5, 8, 16, 0.08), transparent 60%);
+  }
+
+  html[data-theme='light'] .card-art.banner-missing::after {
+    background:
+      radial-gradient(circle at 30% 30%, color-mix(in srgb, var(--accent, var(--coral-bright)) 30%, transparent), transparent 34%),
+      linear-gradient(180deg, transparent, rgba(5, 8, 16, 0.58));
+  }
+
+  html[data-theme='light'] .logo-badge {
+    border: 1px solid color-mix(in srgb, var(--accent, var(--coral-bright)) 38%, rgba(15, 23, 42, 0.18));
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.82));
+    box-shadow:
+      0 8px 22px rgba(15, 23, 42, 0.18),
+      0 0 18px color-mix(in srgb, var(--accent, var(--coral-bright)) 22%, transparent);
+  }
+
+  html[data-theme='light'] .generated-logo {
+    background: color-mix(in srgb, var(--accent, var(--coral-bright)) 16%, rgba(15, 23, 42, 0.85));
+  }
+
+  /* Site / Repo chips: use the card surface so they actually have a body. */
+  html[data-theme='light'] .card-link {
+    background: rgba(255, 255, 255, 0.92);
+    border-color: rgba(15, 23, 42, 0.18);
+    color: var(--text-secondary);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+
+  html[data-theme='light'] .card-link:hover {
+    color: #ffffff;
+    border-color: var(--accent, var(--coral-bright));
+    background: var(--accent, var(--coral-bright));
+  }
+
+  html[data-theme='light'] .more-details > summary {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+
+  html[data-theme='light'] .cta-section {
+    background: rgba(255, 255, 255, 0.86);
+    box-shadow: 0 6px 28px rgba(15, 23, 42, 0.06);
+  }
+
+  /* CTA buttons in light mode — the dark-mode versions had cream-on-cream text. */
+  html[data-theme='light'] .cta-primary {
+    background: linear-gradient(135deg, var(--coral-bright), var(--coral-dark));
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 8px 22px color-mix(in srgb, var(--coral-bright) 32%, transparent);
+  }
+
+  html[data-theme='light'] .cta-primary:hover {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--coral-bright) 92%, #000), var(--coral-dark));
+    border-color: transparent;
+    box-shadow: 0 12px 30px color-mix(in srgb, var(--coral-bright) 40%, transparent);
+  }
+
+  html[data-theme='light'] .cta-secondary {
+    background: linear-gradient(135deg, var(--cyan-bright), var(--cyan-mid));
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 8px 22px color-mix(in srgb, var(--cyan-bright) 32%, transparent);
+  }
+
+  html[data-theme='light'] .cta-secondary:hover {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--cyan-bright) 92%, #000), var(--cyan-mid));
+    border-color: transparent;
+    box-shadow: 0 12px 30px color-mix(in srgb, var(--cyan-bright) 40%, transparent);
   }
 </style>

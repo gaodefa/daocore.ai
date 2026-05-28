@@ -1095,29 +1095,36 @@ function logoSrc(project: Project) {
     font-weight: 600;
     font-size: 0.95rem;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
   }
 
   .cta-primary {
-    background: linear-gradient(135deg, var(--coral-bright), var(--coral-dark));
-    color: white;
-    box-shadow: 0 4px 16px var(--shadow-coral-mid);
+    background: linear-gradient(135deg, rgba(255, 111, 77, 0.18), rgba(255, 77, 77, 0.1));
+    border-color: rgba(255, 111, 77, 0.34);
+    color: #f6e8e4;
+    box-shadow: 0 10px 26px rgba(255, 77, 77, 0.08);
   }
 
   .cta-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(255, 77, 77, 0.4);
+    background: linear-gradient(135deg, rgba(255, 111, 77, 0.26), rgba(255, 77, 77, 0.15));
+    border-color: rgba(255, 111, 77, 0.48);
+    box-shadow: 0 14px 34px rgba(255, 77, 77, 0.14);
   }
 
   .cta-secondary {
-    background: linear-gradient(135deg, var(--cyan-bright), var(--cyan-mid));
-    color: var(--bg-deep);
-    box-shadow: 0 4px 16px rgba(0, 229, 204, 0.3);
+    background: linear-gradient(135deg, rgba(0, 229, 204, 0.2), rgba(95, 227, 212, 0.12));
+    border-color: rgba(95, 227, 212, 0.36);
+    color: #d8fffa;
+    box-shadow: 0 10px 26px rgba(0, 229, 204, 0.08);
   }
 
   .cta-secondary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 229, 204, 0.4);
+    background: linear-gradient(135deg, rgba(0, 229, 204, 0.28), rgba(95, 227, 212, 0.17));
+    border-color: rgba(95, 227, 212, 0.5);
+    box-shadow: 0 14px 34px rgba(0, 229, 204, 0.14);
   }
 
   .footer {

@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Ecosystem: add a visual project directory with generated banners, real project logos, canonical site links, and local static assets.
 - Website: redirect `blog.openclaw.ai` to the canonical blog at `openclaw.ai/blog`.
 - Blog: refine the article docs CTA panel colors.
 - Blog: cool down the featured post card border and background so the warm coral accent stops dominating the blog index hero.

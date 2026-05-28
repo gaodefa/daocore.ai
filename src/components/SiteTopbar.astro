@@ -6,12 +6,13 @@ interface NavItem {
 }
 
 interface Props {
-  active?: 'home' | 'blog' | 'docs';
+  active?: 'home' | 'blog' | 'docs' | 'ecosystem';
 }
 
 const { active = 'home' } = Astro.props;
 const items: NavItem[] = [
   { href: '/', label: 'Product' },
+  { href: '/ecosystem', label: 'Ecosystem' },
   { href: 'https://docs.openclaw.ai/', label: 'Docs', external: true },
   { href: '/blog', label: 'Blog' },
   { href: 'https://github.com/openclaw/openclaw', label: 'GitHub', external: true },
@@ -21,6 +22,7 @@ function isActive(item: NavItem) {
   if (active === 'home') return item.href === '/';
   if (active === 'blog') return item.href === '/blog';
   if (active === 'docs') return item.label === 'Docs';
+  if (active === 'ecosystem') return item.href === '/ecosystem';
   return false;
 }
 ---

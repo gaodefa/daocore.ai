@@ -1,6 +1,4 @@
 {
-  "installCommand": "CI=true pnpm install --ignore-scripts",
-  "buildCommand": "pnpm run build",
   "routes": [
     {
       "src": "^/blog/performance-size-supply-chain-sweep/?$",

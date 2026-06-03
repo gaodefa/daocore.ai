@@ -13,9 +13,9 @@ const { active = 'home' } = Astro.props;
 const items: NavItem[] = [
   { href: '/', label: 'Product' },
   { href: '/ecosystem', label: 'Ecosystem' },
-  { href: 'https://docs.openclaw.ai/', label: 'Docs', external: true },
+  { href: 'https://docs.daocore.ai/', label: 'Docs', external: true },
   { href: '/blog', label: 'Blog' },
-  { href: 'https://github.com/openclaw/openclaw', label: 'GitHub', external: true },
+  { href: 'https://github.com/daocore/daocore', label: 'GitHub', external: true },
 ];
 
 function isActive(item: NavItem) {
@@ -28,9 +28,9 @@ function isActive(item: NavItem) {
 ---
 
 <header class="site-topbar">
-  <a href="/" class="site-brand" aria-label="OpenClaw home">
+  <a href="/" class="site-brand" aria-label="DaoCore home">
     <img src="/favicon.svg" alt="" />
-    <span>OpenClaw</span>
+    <span>DaoCore</span>
   </a>
   <nav class="site-nav" aria-label="Main">
     {items.map((item) => (

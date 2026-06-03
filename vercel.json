@@ -1,44 +1,18 @@
 {
   "routes": [
     {
-      "src": "^/discord/?$",
-      "has": [{ "type": "host", "value": "openclaw.ai" }],
-      "status": 302,
-      "headers": { "Location": "https://discord.gg/clawd" }
-    },
-    {
       "src": "^/blog/performance-size-supply-chain-sweep/?$",
       "status": 308,
-      "headers": { "Location": "/blog/lighter-core-sharper-claws/" }
-    },
-    {
-      "src": "^/(.*)$",
-      "has": [{ "type": "host", "value": "blog.openclaw.ai" }],
-      "status": 308,
-      "headers": { "Location": "https://openclaw.ai/blog/$1" }
-    },
-    {
-      "src": "^/(.*)$",
-      "has": [{ "type": "host", "value": "trust.openclaw.ai" }],
-      "status": 308,
-      "headers": { "Location": "https://openclaw.ai/blog#security" }
+      "headers": {
+        "Location": "/blog/lighter-core-sharper-claws/"
+      }
     },
     {
       "src": "^/trust(/.*)?$",
       "status": 308,
-      "headers": { "Location": "/blog#security" }
-    },
-    {
-      "src": "^/(.*)$",
-      "has": [{ "type": "host", "value": "clawd.bot" }],
-      "status": 308,
-      "headers": { "Location": "https://openclaw.ai/$1" }
-    },
-    {
-      "src": "^/(.*)$",
-      "has": [{ "type": "host", "value": "www.clawd.bot" }],
-      "status": 308,
-      "headers": { "Location": "https://openclaw.ai/$1" }
+      "headers": {
+        "Location": "/blog#security"
+      }
     }
   ]
 }

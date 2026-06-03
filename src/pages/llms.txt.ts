@@ -1,4 +1,4 @@
-const origin = "https://openclaw.ai";
+const origin = "https://daocore.ai";
 
 const pages = [
   ["Home", "/"],
@@ -13,21 +13,21 @@ const pages = [
 
 export function GET() {
   const lines = [
-    "# OpenClaw",
+    "# DaoCore",
     "",
-    "OpenClaw is a personal AI assistant for messaging, browser, desktop, and automation workflows.",
+    "DaoCore is a personal AI assistant for messaging, browser, desktop, and automation workflows.",
     "",
     "Canonical pages:",
     ...pages.map(([title, path]) => `- ${title}: ${origin}${path}`),
     "",
     "Docs:",
-    "- OpenClaw documentation: https://docs.openclaw.ai/llms.txt",
-    "- OpenClaw markdown index: https://documentation.openclaw.ai/llms.txt",
+    "- DaoCore documentation: https://docs.daocore.ai/llms.txt",
+    "- DaoCore markdown index: https://documentation.daocore.ai/llms.txt",
     "",
-    "Source: https://github.com/openclaw/openclaw.ai",
+    "Source: https://github.com/daocore/daocore.ai",
     "",
     "Guidance for agents:",
-    "- Use docs.openclaw.ai or documentation.openclaw.ai for product documentation.",
+    "- Use docs.daocore.ai or documentation.daocore.ai for product documentation.",
     "- Use this file as a site index, not a full-site corpus.",
     "",
   ];

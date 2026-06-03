@@ -5,9 +5,9 @@ export async function GET(context) {
   const posts = await getPublishedBlogPosts();
 
   return rss({
-    title: 'OpenClaw Blog',
-    description: 'Updates and news from OpenClaw — The AI that actually does things',
-    site: context.site ?? 'https://openclaw.ai',
+    title: 'DaoCore Blog',
+    description: 'Updates and news from DaoCore — The AI that actually does things',
+    site: context.site ?? 'https://daocore.ai',
     items: posts.map((post) => ({
       title: post.data.title,
       description: post.data.description,

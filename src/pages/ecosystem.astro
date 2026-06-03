@@ -76,7 +76,7 @@ const services: Project[] = [
     name: 'Lobster',
     icon: 'lucide:workflow',
     color: CORAL_DEEP,
-    desc: 'OpenClaw-native workflow shell. Compose skills and tools into typed local-first pipelines.',
+    desc: 'DaoCore-native workflow shell. Compose skills and tools into typed local-first pipelines.',
     repo: 'https://github.com/openclaw/lobster',
   },
 ];
@@ -189,21 +189,21 @@ const infra: Project[] = [
     name: 'agent-skills',
     icon: 'lucide:puzzle',
     color: CYAN,
-    desc: 'Canonical public OpenClaw shared skills used across agents.',
+    desc: 'Canonical public DaoCore shared skills used across agents.',
     repo: 'https://github.com/openclaw/agent-skills',
   },
   {
     name: 'plugin-inspector',
     icon: 'lucide:flask-conical',
     color: LIME,
-    desc: 'Offline compatibility inspector for mocking OpenClaw and testing plugins.',
+    desc: 'Offline compatibility inspector for mocking DaoCore and testing plugins.',
     repo: 'https://github.com/openclaw/plugin-inspector',
   },
   {
     name: 'cookbook',
     icon: 'lucide:book-open',
     color: SAND,
-    desc: 'Example apps for the OpenClaw SDK. Copy, adapt, ship.',
+    desc: 'Example apps for the DaoCore SDK. Copy, adapt, ship.',
     repo: 'https://github.com/openclaw/cookbook',
   },
 ];
@@ -316,28 +316,28 @@ const tools: Project[] = [
 
 // Everything else — public repos worth knowing about but not headlined
 const everythingElse: Project[] = [
-  { name: 'nix-openclaw', icon: 'lucide:cpu', color: SKY, desc: 'Packages OpenClaw for Nix.', repo: 'https://github.com/openclaw/nix-openclaw' },
+  { name: 'nix-openclaw', icon: 'lucide:cpu', color: SKY, desc: 'Packages DaoCore for Nix.', repo: 'https://github.com/openclaw/nix-openclaw' },
   { name: 'clawdinators', icon: 'lucide:server-cog', color: VIOLET, desc: 'Declarative infra + NixOS modules for CLAWTINATOR hosts.', repo: 'https://github.com/openclaw/clawdinators' },
-  { name: 'openclaw-ansible', icon: 'lucide:key-round', color: AMBER, desc: 'Hardened Clawdbot install: Tailscale, UFW, Docker isolation.', repo: 'https://github.com/openclaw/openclaw-ansible' },
+  { name: 'openclaw-ansible', icon: 'lucide:key-round', color: AMBER, desc: 'Hardened Clawdbot install: Tailscale, UFW, Docker isolation.', repo: 'https://github.com/daocore/daocore-ansible' },
   { name: 'casa', icon: 'lucide:home', color: CORAL, desc: 'Expose your home base to Clawdbot.', repo: 'https://github.com/openclaw/casa' },
-  { name: 'multipass', icon: 'lucide:plug', color: SAND, desc: 'CLI using Vercel Chat SDK to test message channels against OpenClaw.', repo: 'https://github.com/openclaw/multipass' },
+  { name: 'multipass', icon: 'lucide:plug', color: SAND, desc: 'CLI using Vercel Chat SDK to test message channels against DaoCore.', repo: 'https://github.com/openclaw/multipass' },
   { name: 'clawgo', icon: 'lucide:cpu', color: SKY, desc: 'Clawd node in Go.', repo: 'https://github.com/openclaw/clawgo' },
-  { name: 'esp-openclaw-node', icon: 'lucide:cpu', color: AMBER, desc: 'ESP-based OpenClaw node — hardware claws.', repo: 'https://github.com/openclaw/esp-openclaw-node' },
-  { name: 'Kova', icon: 'lucide:flask-conical', color: VIOLET, desc: 'OpenClaw runtime validation lab.', repo: 'https://github.com/openclaw/Kova' },
+  { name: 'esp-openclaw-node', icon: 'lucide:cpu', color: AMBER, desc: 'ESP-based DaoCore node — hardware claws.', repo: 'https://github.com/openclaw/esp-openclaw-node' },
+  { name: 'Kova', icon: 'lucide:flask-conical', color: VIOLET, desc: 'DaoCore runtime validation lab.', repo: 'https://github.com/openclaw/Kova' },
   { name: 'Swabble', icon: 'lucide:wand', color: ROSE, desc: 'Swift version of brabble.dev.', repo: 'https://github.com/openclaw/Swabble' },
   { name: 'caclawphony', icon: 'lucide:workflow', color: CYAN, desc: 'Symphony: isolated, autonomous implementation runs.', repo: 'https://github.com/openclaw/caclawphony' },
   { name: 'clownfish', icon: 'lucide:sparkles', color: CORAL, desc: 'Maintainer codex harness for resolving issue clusters at scale.', repo: 'https://github.com/openclaw/clownfish' },
-  { name: 'openclaw-rtt', icon: 'lucide:gauge', color: LIME, desc: 'RTT timing measurements across OpenClaw npm releases.', repo: 'https://github.com/openclaw/openclaw-rtt' },
-  { name: 'openclaw-windows-node', icon: 'lucide:monitor', color: '#0078D4', desc: 'Windows companion suite: tray app, library, Node, PowerToys.', repo: 'https://github.com/openclaw/openclaw-windows-node' },
+  { name: 'openclaw-rtt', icon: 'lucide:gauge', color: LIME, desc: 'RTT timing measurements across DaoCore npm releases.', repo: 'https://github.com/daocore/daocore-rtt' },
+  { name: 'openclaw-windows-node', icon: 'lucide:monitor', color: '#0078D4', desc: 'Windows companion suite: tray app, library, Node, PowerToys.', repo: 'https://github.com/daocore/daocore-windows-node' },
   { name: 'clawdex', icon: 'lucide:users', color: CYAN_DEEP, desc: 'Contacts for claws.', repo: 'https://github.com/openclaw/clawdex' },
   { name: 'crabpot', icon: 'lucide:flask-conical', color: AMBER, desc: 'Compatibility testbed for community plugins and plugin seams.', repo: 'https://github.com/openclaw/crabpot' },
   { name: 'kitchen-sink', icon: 'lucide:boxes', color: VIOLET, desc: 'Credential-free plugin fixture covering the public plugin API.', repo: 'https://github.com/openclaw/kitchen-sink' },
-  { name: 'ask-molty', icon: 'lucide:book-open', color: CORAL, desc: 'Documentation builder for docs.openclaw.ai.', repo: 'https://github.com/openclaw/ask-molty' },
-  { name: 'docs', icon: 'lucide:book-open', color: SKY, desc: 'OpenClaw documentation + translation source.', site: 'https://docs.openclaw.ai', repo: 'https://github.com/openclaw/docs' },
-  { name: 'community', icon: 'lucide:users', color: ROSE, desc: 'Policies and documentation for the OpenClaw Discord server.', repo: 'https://github.com/openclaw/community' },
+  { name: 'ask-molty', icon: 'lucide:book-open', color: CORAL, desc: 'Documentation builder for docs.daocore.ai.', repo: 'https://github.com/openclaw/ask-molty' },
+  { name: 'docs', icon: 'lucide:book-open', color: SKY, desc: 'DaoCore documentation + translation source.', site: 'https://docs.daocore.ai', repo: 'https://github.com/openclaw/docs' },
+  { name: 'community', icon: 'lucide:users', color: ROSE, desc: 'Policies and documentation for the DaoCore Discord server.', repo: 'https://github.com/openclaw/community' },
   { name: 'rfcs', icon: 'lucide:file-code', color: SAND, desc: 'Public design proposals and architecture discussions.', repo: 'https://github.com/openclaw/rfcs' },
-  { name: 'releases', icon: 'lucide:rocket', color: CYAN, desc: 'Release automation and evidence ledger for OpenClaw.', repo: 'https://github.com/openclaw/releases' },
-  { name: 'homebrew-tap', icon: 'lucide:package-open', color: AMBER, desc: 'Homebrew formulas for OpenClaw CLI tools.', repo: 'https://github.com/openclaw/homebrew-tap' },
+  { name: 'releases', icon: 'lucide:rocket', color: CYAN, desc: 'Release automation and evidence ledger for DaoCore.', repo: 'https://github.com/openclaw/releases' },
+  { name: 'homebrew-tap', icon: 'lucide:package-open', color: AMBER, desc: 'Homebrew formulas for DaoCore CLI tools.', repo: 'https://github.com/openclaw/homebrew-tap' },
 ];
 
 type Section = { id: string; title: string; tagline: string; items: Project[]; columns?: number };
@@ -395,7 +395,7 @@ const siteByName: Record<string, string> = {
   Octopool: 'https://octopool.dev',
   Crabfleet: 'https://crabfleet.ai',
   ClickClack: 'https://clickclack.chat',
-  Lobster: 'https://docs.openclaw.ai/tools/lobster',
+  Lobster: 'https://docs.daocore.ai/tools/lobster',
   discrawl: 'https://discrawl.sh',
   gitcrawl: 'https://gitcrawl.sh',
   acpx: 'https://acpx.sh',
@@ -418,9 +418,9 @@ const siteByName: Record<string, string> = {
   'esp-openclaw-node': 'https://openclaw.github.io/esp-openclaw-node/',
   Swabble: 'https://swabble.ai',
   clawdex: 'https://clawdex.sh',
-  'ask-molty': 'https://docs.openclaw.ai',
-  docs: 'https://docs.openclaw.ai',
-  releases: 'https://openclaw.ai',
+  'ask-molty': 'https://docs.daocore.ai',
+  docs: 'https://docs.daocore.ai',
+  releases: 'https://daocore.ai',
 };
 
 const generatedBannerSlugs = new Set([
@@ -478,17 +478,17 @@ function logoSrc(project: Project) {
 
 ---
 
-<Layout title="Ecosystem — OpenClaw">
+<Layout title="Ecosystem — DaoCore">
   <SiteTopbar active="ecosystem" />
   <div class="stars"></div>
   <div class="nebula"></div>
 
   <main class="container">
     <header class="hero">
-      <p class="eyebrow">The OpenClaw ecosystem</p>
+      <p class="eyebrow">The DaoCore ecosystem</p>
       <h1 class="title">A whole reef of claws.</h1>
       <p class="description">
-        OpenClaw is more than the assistant. It is a federation of ~70 open source
+        DaoCore is more than the assistant. It is a federation of ~70 open source
         projects — hosted agents, local-first crawlers, SDKs, skill registries, and
         native tooling — that share a runtime, a protocol, and a sense of humor.
       </p>
@@ -602,7 +602,7 @@ function logoSrc(project: Project) {
         Everything above is open source. Read an RFC, file an issue, ship a skill to ClawHub.
       </p>
       <div class="cta-row">
-        <a href="https://github.com/openclaw" target="_blank" rel="noopener" class="cta-button cta-primary">
+        <a href="https://github.com/daocore" target="_blank" rel="noopener" class="cta-button cta-primary">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
             <path d={siIcon(siGithub)} />
           </svg>
@@ -626,7 +626,7 @@ function logoSrc(project: Project) {
         <span class="footer-separator">·</span>
         <a href="/press">Press</a>
       </nav>
-      <p>Built by <a href="https://molty.me" target="_blank" rel="noopener">Molty</a> 🦞, a space lobster AI with a <a href="https://soul.md" target="_blank" rel="noopener">soul</a>, by <a href="https://steipete.me" target="_blank" rel="noopener">Peter Steinberger</a> & <a href="https://github.com/openclaw/openclaw#community" target="_blank" rel="noopener">community</a>.</p>
+      <p>Built by <a href="https://molty.me" target="_blank" rel="noopener">Molty</a> 🦞, a space lobster AI with a <a href="https://soul.md" target="_blank" rel="noopener">soul</a>, by <a href="https://steipete.me" target="_blank" rel="noopener">Peter Steinberger</a> & <a href="https://github.com/daocore/daocore#community" target="_blank" rel="noopener">community</a>.</p>
     </footer>
   </main>
 </Layout>

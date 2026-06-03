@@ -5,7 +5,7 @@
     "title": "15+ Agent Army Running Across 3 Machines",
     "href": "https://x.com/jdrhyne/status/2012778049406742632",
     "source": "X thread",
-    "summary": "A full OpenClaw setup clearing 10,000 emails, reviewing decks, building CLI tools, optimizing Google Ads, drafting posts, and orchestrating Codex workers across a Discord-driven agent fleet.",
+    "summary": "A full DaoCore setup clearing 10,000 emails, reviewing decks, building CLI tools, optimizing Google Ads, drafting posts, and orchestrating Codex workers across a Discord-driven agent fleet.",
     "tags": ["multi-agent", "discord", "automation"],
     "likes": 119
   },
@@ -15,7 +15,7 @@
     "title": "Personal Operating System With Daily Briefings",
     "href": "https://x.com/danpeguine/status/2012565160586625345",
     "source": "X thread",
-    "summary": "OpenClaw timeblocks tasks, runs weekly reviews from meeting notes, briefs before meetings, watches family school deadlines, researches projects, resolves calendar conflicts, and creates invoices.",
+    "summary": "DaoCore timeblocks tasks, runs weekly reviews from meeting notes, briefs before meetings, watches family school deadlines, researches projects, resolves calendar conflicts, and creates invoices.",
     "tags": ["calendar", "briefings", "productivity"],
     "likes": 257
   },
@@ -25,7 +25,7 @@
     "title": "Voice-Guided Production Fix While Walking the Dog",
     "href": "https://x.com/georgedagg_/status/2012119327147798753",
     "source": "X thread",
-    "summary": "A live OpenClaw workflow that inspected failed Railway builds, diagnosed the root cause, changed deployment configs, redeployed, fixed a design issue, and submitted a PR over voice.",
+    "summary": "A live DaoCore workflow that inspected failed Railway builds, diagnosed the root cause, changed deployment configs, redeployed, fixed a design issue, and submitted a PR over voice.",
     "tags": ["voice", "deploy", "coding"],
     "likes": 143
   },
@@ -35,7 +35,7 @@
     "title": "One Chat Controlling Mail, Messages, Orders, Calls, and a Vault",
     "href": "https://x.com/dreetje/status/2012535486401671588",
     "source": "X thread",
-    "summary": "A single OpenClaw assistant checking mail, reading Beeper messages, ordering things, sending reminders, creating GitHub issues, discussing bookmarks, handling voice calls, and reading and writing a dedicated 1Password vault.",
+    "summary": "A single DaoCore assistant checking mail, reading Beeper messages, ordering things, sending reminders, creating GitHub issues, discussing bookmarks, handling voice calls, and reading and writing a dedicated 1Password vault.",
     "tags": ["mail", "beeper", "personal-ai"],
     "likes": 271
   },

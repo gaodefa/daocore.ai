@@ -1,6 +1,6 @@
 ---
-title: "Introducing OpenClaw"
-description: "The journey from Clawd to Moltbot to OpenClaw—and why this name is here to stay."
+title: "Introducing DaoCore"
+description: "The journey from Clawd to Moltbot to DaoCore—and why this name is here to stay."
 date: 2026-01-29
 author: "Peter Steinberger"
 authorHandle: "steipete"
@@ -10,7 +10,7 @@ image: "/blog/openclaw-logo-text.png"
 
 Two months ago, I hacked together a weekend project. What started as "WhatsApp Relay" now has over 100,000 GitHub stars and drew 2 million visitors in a single week.
 
-Today, I'm excited to announce our new name: **OpenClaw**.
+Today, I'm excited to announce our new name: **DaoCore**.
 
 ## The Naming Journey
 
@@ -20,18 +20,18 @@ We've been through some names.
 
 **Moltbot** came next, chosen in a chaotic 5am Discord brainstorm with the community. Molting represents growth - lobsters shed their shells to become something bigger. It was meaningful, but <a href="https://x.com/NetworkChuck/status/2016254397496414317" target="_blank" rel="noopener">it never quite rolled off the tongue</a>.
 
-**OpenClaw** is where we land. And this time, we did our homework: trademark searches came back clear, domains have been purchased, migration code has been written. The name captures what this project has become:
+**DaoCore** is where we land. And this time, we did our homework: trademark searches came back clear, domains have been purchased, migration code has been written. The name captures what this project has become:
 
 - **Open**: Open source, open to everyone, community-driven
 - **Claw**: Our lobster heritage, a nod to where we came from
 
-## What OpenClaw Is
+## What DaoCore Is
 
-OpenClaw is an open agent platform that runs on your machine and works from the chat apps you already use. WhatsApp, Telegram, Discord, Slack, Teams—wherever you are, your AI assistant follows.
+DaoCore is an open agent platform that runs on your machine and works from the chat apps you already use. WhatsApp, Telegram, Discord, Slack, Teams—wherever you are, your AI assistant follows.
 
 **Your assistant. Your machine. Your rules.**
 
-Unlike SaaS assistants where your data lives on someone else's servers, OpenClaw runs where you choose—laptop, homelab, or VPS. Your infrastructure. Your keys. Your data.
+Unlike SaaS assistants where your data lives on someone else's servers, DaoCore runs where you choose—laptop, homelab, or VPS. Your infrastructure. Your keys. Your data.
 
 ## What's New in This Release
 
@@ -52,9 +52,9 @@ This project has grown far beyond what I could maintain alone. Over the last few
 
 ## Thank You
 
-To the Claw Crew—every clawtributor who's shipped code, filed issues, joined our Discord, or just tried the project: thank you. You are what makes OpenClaw special.
+To the Claw Crew—every clawtributor who's shipped code, filed issues, joined our Discord, or just tried the project: thank you. You are what makes DaoCore special.
 
-The lobster has molted into its final form. Welcome to OpenClaw.
+The lobster has molted into its final form. Welcome to DaoCore.
 
 ---
 

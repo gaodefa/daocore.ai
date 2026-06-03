@@ -77,10 +77,10 @@ const relatedPosts = allPosts
   .slice(0, 3)
   .map((item) => item.post);
 
-const postUrl = `https://openclaw.ai/blog/${post.id}`;
+const postUrl = `https://daocore.ai/blog/${post.id}`;
 ---
 
-<Layout title={`${post.data.title} - OpenClaw Blog`} description={post.data.description}>
+<Layout title={`${post.data.title} - DaoCore Blog`} description={post.data.description}>
   <SiteTopbar active="blog" />
   <div class="stars"></div>
   <div class="nebula"></div>
@@ -96,15 +96,15 @@ const postUrl = `https://openclaw.ai/blog/${post.id}`;
       </div>
       <div class="side-card">
         <p class="side-kicker">Related docs</p>
-        <a href="https://docs.openclaw.ai/gateway/security" target="_blank" rel="noopener">Security</a>
-        <a href="https://docs.openclaw.ai/plugins" target="_blank" rel="noopener">Plugins</a>
-        <a href="https://docs.openclaw.ai/providers/openai" target="_blank" rel="noopener">OpenAI</a>
+        <a href="https://docs.daocore.ai/gateway/security" target="_blank" rel="noopener">Security</a>
+        <a href="https://docs.daocore.ai/plugins" target="_blank" rel="noopener">Plugins</a>
+        <a href="https://docs.daocore.ai/providers/openai" target="_blank" rel="noopener">OpenAI</a>
       </div>
     </aside>
 
     <article class="article">
       <header class="article-header">
-        <p class="article-kicker">OpenClaw blog</p>
+        <p class="article-kicker">DaoCore blog</p>
         <h1>{post.data.title}</h1>
         <p class="dek">{post.data.description}</p>
 
@@ -175,9 +175,9 @@ const postUrl = `https://openclaw.ai/blog/${post.id}`;
         <section class="cta-box">
           <div>
             <h2>Build from the docs</h2>
-            <p>Install, configure, and harden OpenClaw with the same reading layout.</p>
+            <p>Install, configure, and harden DaoCore with the same reading layout.</p>
           </div>
-          <a href="https://docs.openclaw.ai/start/getting-started" target="_blank" rel="noopener">Open docs</a>
+          <a href="https://docs.daocore.ai/start/getting-started" target="_blank" rel="noopener">Open docs</a>
         </section>
       </footer>
     </article>

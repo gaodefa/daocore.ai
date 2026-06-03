@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw Is Getting Faster, Smaller, and Easier to Trust"
+title: "DaoCore Is Getting Faster, Smaller, and Easier to Trust"
 description: "A release sweep across February through May shows faster agent turns, fewer dependencies, and a cleaner package shape."
 date: 2026-05-28
 author: "Peter Steinberger"
@@ -8,11 +8,11 @@ draft: false
 tags: ["performance", "release", "security", "dependencies"]
 ---
 
-OpenClaw has been getting faster and smaller at the same time. The performance work is visible in agent turns. The dependency work is quieter, but it cuts npm size, install size, audit surface, and native package surprises.
+DaoCore has been getting faster and smaller at the same time. The performance work is visible in agent turns. The dependency work is quieter, but it cuts npm size, install size, audit surface, and native package surprises.
 
-The package grew while OpenClaw gained channels, providers, media, memory, and plugin SDK surface. Then we started moving heavier plugin dependency cones out of core. The full release rows and caveats live in the [technical report](https://docs.openclaw.ai/reference/release-performance-sweep).
+The package grew while DaoCore gained channels, providers, media, memory, and plugin SDK surface. Then we started moving heavier plugin dependency cones out of core. The full release rows and caveats live in the [technical report](https://docs.openclaw.ai/reference/release-performance-sweep).
 
-<section class="metric-grid" aria-label="OpenClaw release sweep highlights">
+<section class="metric-grid" aria-label="DaoCore release sweep highlights">
   <div class="metric-card">
     <span>Stable cold turn</span>
     <strong>2.9x faster</strong>
@@ -47,7 +47,7 @@ The package grew while OpenClaw gained channels, providers, media, memory, and p
   </div>
 </section>
 
-<section class="chart-grid" aria-label="OpenClaw performance, npm package, and install charts">
+<section class="chart-grid" aria-label="DaoCore performance, npm package, and install charts">
   <figure class="chart-card">
     <figcaption>Cold agent turn trend</figcaption>
     <div class="bar-list">
@@ -101,7 +101,7 @@ The package grew while OpenClaw gained channels, providers, media, memory, and p
   </figure>
 </section>
 
-<section class="chart-grid" aria-label="OpenClaw install footprint and plugin extraction charts">
+<section class="chart-grid" aria-label="DaoCore install footprint and plugin extraction charts">
   <figure class="chart-card">
     <figcaption>Fresh install footprint</figcaption>
     <div class="bar-list">

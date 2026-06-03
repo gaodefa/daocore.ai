@@ -43,7 +43,7 @@ type Author = { name: string; handle?: string; url?: string; avatar?: string };
 
 function firstAuthor(post: (typeof posts)[number]): Author {
   return post.data.authors?.[0] ?? {
-    name: post.data.author ?? 'OpenClaw Team',
+    name: post.data.author ?? 'DaoCore Team',
     handle: post.data.authorHandle,
     url: post.data.authorUrl,
     avatar: post.data.authorAvatar,
@@ -55,7 +55,7 @@ function getAuthorAvatar(author: Author): string {
 }
 ---
 
-<Layout title="Blog - OpenClaw" description="OpenClaw updates, security notes, release context, and product essays.">
+<Layout title="Blog - DaoCore" description="DaoCore updates, security notes, release context, and product essays.">
   <SiteTopbar active="blog" />
   <div class="stars"></div>
   <div class="nebula"></div>
@@ -68,13 +68,13 @@ function getAuthorAvatar(author: Author): string {
       <div class="rail-card">
         <span class="rail-card-mark">Ask</span>
         <p>Need implementation details? Jump from an essay into the docs without changing mental mode.</p>
-        <a href="https://docs.openclaw.ai/" target="_blank" rel="noopener">Open docs</a>
+        <a href="https://docs.daocore.ai/" target="_blank" rel="noopener">Open docs</a>
       </div>
     </aside>
 
     <section class="blog-main">
       <header class="blog-hero">
-        <p class="eyebrow">OpenClaw blog</p>
+        <p class="eyebrow">DaoCore blog</p>
         <h1>What we’re building, fixing, and learning.</h1>
         <p>
           Security writeups, release context, model/runtime notes, and the occasional lobster-shaped aside.
@@ -137,10 +137,10 @@ function getAuthorAvatar(author: Author): string {
 
     <aside class="pub-toc" aria-label="Reading paths">
       <h2>Reading paths</h2>
-      <a href="https://docs.openclaw.ai/gateway/security" target="_blank" rel="noopener">Security docs</a>
-      <a href="https://docs.openclaw.ai/providers/openai" target="_blank" rel="noopener">OpenAI provider</a>
-      <a href="https://docs.openclaw.ai/plugins" target="_blank" rel="noopener">Plugins</a>
-      <a href="https://docs.openclaw.ai/start/showcase" target="_blank" rel="noopener">Showcase</a>
+      <a href="https://docs.daocore.ai/gateway/security" target="_blank" rel="noopener">Security docs</a>
+      <a href="https://docs.daocore.ai/providers/openai" target="_blank" rel="noopener">OpenAI provider</a>
+      <a href="https://docs.daocore.ai/plugins" target="_blank" rel="noopener">Plugins</a>
+      <a href="https://docs.daocore.ai/start/showcase" target="_blank" rel="noopener">Showcase</a>
     </aside>
   </main>
 </Layout>

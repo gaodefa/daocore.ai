@@ -1,6 +1,6 @@
 ---
-title: "Where OpenClaw Security Is Heading"
-description: "The security roadmap for making OpenClaw a powerful personal assistant runtime users can understand, observe, and trust."
+title: "Where DaoCore Security Is Heading"
+description: "The security roadmap for making DaoCore a powerful personal assistant runtime users can understand, observe, and trust."
 date: 2026-05-15
 authors:
   - name: "Jesse Merhi"
@@ -14,19 +14,19 @@ draft: false
 tags: ["security", "open-source", "clawhub", "plugins"]
 ---
 
-Our goal is for OpenClaw to become a trusted way to run a powerful AI personal assistant.
+Our goal is for DaoCore to become a trusted way to run a powerful AI personal assistant.
 
-OpenClaw can read files, run commands, install plugins, talk to the network, and act on a real machine for a real user. Power like that is easy to describe as dangerous. The concern is fair. Powerful does not have to mean blind, unbounded, or impossible to audit.
+DaoCore can read files, run commands, install plugins, talk to the network, and act on a real machine for a real user. Power like that is easy to describe as dangerous. The concern is fair. Powerful does not have to mean blind, unbounded, or impossible to audit.
 
 Some of this has landed. Some is rolling out. Some is still in flight. Some is research. I want to be clear about the difference, because posts that blur those lines mislead readers.
 
 ## Filesystem boundaries and fs-safe
 
-OpenClaw runs on your machine. That means it can touch your documents, your codebases, and your photos.
+DaoCore runs on your machine. That means it can touch your documents, your codebases, and your photos.
 
 The filesystem risk people usually reach for first is path traversal. That risk is real, but it is also only one symptom of a bigger class of bugs: unclear boundaries. Code thinks it is writing inside one root, then a symlink, absolute path, archive extraction, or sloppy join makes it cross another.
 
-[`fs-safe`](https://fs-safe.io/) is one answer to that. It is the set of [safe filesystem patterns](https://docs.openclaw.ai/gateway/security/secure-file-operations) OpenClaw had already been growing, pulled into a shared library so core code, plugins, and adjacent services can use the same root-bounded primitives.
+[`fs-safe`](https://fs-safe.io/) is one answer to that. It is the set of [safe filesystem patterns](https://docs.openclaw.ai/gateway/security/secure-file-operations) DaoCore had already been growing, pulled into a shared library so core code, plugins, and adjacent services can use the same root-bounded primitives.
 
 It is not a sandbox. A plugin that is allowed to run arbitrary shell commands can still do arbitrary shell-command things. `fs-safe` protects against boundary-crossing bugs in filesystem code.
 
@@ -53,9 +53,9 @@ The fix has to move closer to egress.
 
 Proxyline routes. The proxy enforces.
 
-It also gives operators observability. If you already run a managed proxy, you can route OpenClaw through it and watch destinations, rates, and blocked attempts from infrastructure you already trust.
+It also gives operators observability. If you already run a managed proxy, you can route DaoCore through it and watch destinations, rates, and blocked attempts from infrastructure you already trust.
 
-Proxyline is not a perfect cage around every possible byte. Raw sockets, native modules, unusual transports, early-captured agents, and non-OpenClaw child processes can still bypass a Node-level guardrail. But for ordinary OpenClaw network paths, moving the control point from "a wrapper remembered to validate this URL" to "egress flows through a proxy policy" is a much better shape.
+Proxyline is not a perfect cage around every possible byte. Raw sockets, native modules, unusual transports, early-captured agents, and non-DaoCore child processes can still bypass a Node-level guardrail. But for ordinary DaoCore network paths, moving the control point from "a wrapper remembered to validate this URL" to "egress flows through a proxy policy" is a much better shape.
 
 The validation path is simple: `example.com` should pass, a loopback canary should fail, and [`openclaw proxy validate`](https://docs.openclaw.ai/cli/proxy) should prove the configured route behaves that way.
 
@@ -66,13 +66,13 @@ The validation path is simple: `example.com` should pass, a loopback canary shou
 
 ## Plugin trust on ClawHub
 
-ClawHub has to be the authority for plugin trust and provenance when a plugin comes from ClawHub. OpenClaw should consume those signals during install and update, rather than rely only on local inspection after the fact.
+ClawHub has to be the authority for plugin trust and provenance when a plugin comes from ClawHub. DaoCore should consume those signals during install and update, rather than rely only on local inspection after the fact.
 
 The ClawHub pipeline is a mix of signals: ClawScan, VirusTotal, static analysis, metadata checks, source provenance, and manual moderation. None of those is magic. Scanners are noisy in different ways, and a pipeline that screams about everything teaches users to ignore it.
 
 That is where [ClawHub](https://docs.openclaw.ai/clawhub) can do something a local install flow cannot. It can attach [trust evidence](https://docs.openclaw.ai/clawhub/security-audits) to a specific package version. It can say this release is clean, suspicious, held, quarantined, revoked, or malicious. It can block downloads for [malicious or quarantined releases](https://docs.openclaw.ai/clawhub/moderation). It can show users what changed and why.
 
-[Plugins can come from](https://docs.openclaw.ai/cli/plugins) GitHub, a private registry, or a file someone sends you. That is not going away, and OpenClaw should not pretend users do not own their own machines.
+[Plugins can come from](https://docs.openclaw.ai/cli/plugins) GitHub, a private registry, or a file someone sends you. That is not going away, and DaoCore should not pretend users do not own their own machines.
 
 What we can do is make the safe path better. Publish on ClawHub. Get scanned. Attach evidence. Let users weigh that evidence before install.
 
@@ -81,8 +81,8 @@ We are also exploring higher-trust tiers above the baseline: official packages, 
 If ClawHub marks a release as malicious and quarantined, the ClawHub install path should refuse it. That is the bar.
 
 <figure class="evidence-figure">
-  <img src="/blog/where-openclaw-security-is-heading/clawhub-malicious-install-blocked-compact-evidence.png" alt="Terminal output showing OpenClaw refusing to install a ClawHub release flagged as malicious and quarantined." loading="lazy" />
-  <figcaption>ClawHub marks a release as malicious and quarantined; OpenClaw refuses the install.</figcaption>
+  <img src="/blog/where-openclaw-security-is-heading/clawhub-malicious-install-blocked-compact-evidence.png" alt="Terminal output showing DaoCore refusing to install a ClawHub release flagged as malicious and quarantined." loading="lazy" />
+  <figcaption>ClawHub marks a release as malicious and quarantined; DaoCore refuses the install.</figcaption>
 </figure>
 
 ## Command approvals and prompt fatigue
@@ -93,10 +93,10 @@ Fixing this means fewer prompts, and better prompts.
 
 The accuracy part starts with parsing. String matching is not enough. If an allowlist or blocklist only sees the outer command, wrappers become a bypass. A policy that understands `rm` but cannot see inside `bash -c "rm -rf ~/something"` is not a policy users should trust.
 
-The [shell approval path](https://docs.openclaw.ai/tools/exec-approvals) now evaluates inner command chains for common shell `-c` wrappers. If the inner chain contains an executable that is not allowed, the wrapper should not make it safe. The command highlighter also uses Tree-sitter to surface what OpenClaw found inside wrappers.
+The [shell approval path](https://docs.openclaw.ai/tools/exec-approvals) now evaluates inner command chains for common shell `-c` wrappers. If the inner chain contains an executable that is not allowed, the wrapper should not make it safe. The command highlighter also uses Tree-sitter to surface what DaoCore found inside wrappers.
 
 <figure class="evidence-figure">
-  <img src="/blog/where-openclaw-security-is-heading/command-ast-approval-highlight-evidence.png" alt="OpenClaw exec approval dialog highlighting executables inside a nested bash and Python command, including rm." loading="lazy" />
+  <img src="/blog/where-openclaw-security-is-heading/command-ast-approval-highlight-evidence.png" alt="DaoCore exec approval dialog highlighting executables inside a nested bash and Python command, including rm." loading="lazy" />
   <figcaption>The command highlighter identifies executables inside wrapper payloads, including the inner destructive command.</figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ For OpenAI users we expose [Auto Review](https://developers.openai.com/codex/con
 
 ## Static analysis
 
-OpenClaw has had a lot of GitHub Security Advisories. The first job was plugging holes. The next job is making sure the same bug class does not come back.
+DaoCore has had a lot of GitHub Security Advisories. The first job was plugging holes. The next job is making sure the same bug class does not come back.
 
 After an advisory is patched, it is tempting to call it done. A GHSA is evidence about a bug class, not just one bug. The question after triage is: can we find all the code that looks like this?
 
@@ -131,10 +131,10 @@ Today the checked-in precise OpenGrep rulepack has 148 rules. It runs on PR diff
 
 CodeQL runs alongside for deeper semantic coverage. It is slower and noisier to maintain; we use both.
 
-## What This Means for OpenClaw Users
+## What This Means for DaoCore Users
 
-OpenClaw is not becoming less powerful. We are making the boundaries easier to see and defend.
+DaoCore is not becoming less powerful. We are making the boundaries easier to see and defend.
 
 We are not going to promise risk-free agents. Anyone promising that is selling something, or has not shipped enough yet.
 
-What we can promise is the direction. OpenClaw can stay powerful while becoming more defensible. That is what we are building.
+What we can promise is the direction. DaoCore can stay powerful while becoming more defensible. That is what we are building.

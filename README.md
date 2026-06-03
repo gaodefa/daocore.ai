@@ -1,8 +1,8 @@
-# openclaw.ai
+# daocore.ai
 
-Landing page for [OpenClaw](https://github.com/openclaw/openclaw) — your personal AI assistant.
+Landing page for [DaoCore](https://github.com/openclaw/openclaw) — your personal AI assistant.
 
-**Live**: [openclaw.ai](https://openclaw.ai)
+**Live**: [daocore.ai](https://daocore.ai)
 
 ## Pages
 
@@ -42,9 +42,9 @@ Automatically deployed to Vercel on push to `main`.
 
 The landing page hosts installer scripts:
 
-- **macOS/Linux**: `curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install.sh | bash`
-- **macOS/Linux (CLI only, no onboarding)**: `curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install-cli.sh | bash`
-- **Windows**: `powershell -c "irm https://openclaw.ai/install.ps1 | iex"`
+- **macOS/Linux**: `curl -fsSL --proto '=https' --tlsv1.2 https://daocore.ai/install.sh | bash`
+- **macOS/Linux (CLI only, no onboarding)**: `curl -fsSL --proto '=https' --tlsv1.2 https://daocore.ai/install-cli.sh | bash`
+- **Windows**: `powershell -c "irm https://daocore.ai/install.ps1 | iex"`
 
 Installer UI controls (macOS/Linux `install.sh`):
 - Gum UI is auto-detected; interactive terminals get richer status output, non-interactive shells fall back to plain output automatically.
@@ -62,7 +62,7 @@ Switching after install:
 - git checkout to npm package: `openclaw update --channel stable`
 - installer-forced switch: rerun the installer with `--install-method git` or `--install-method npm`
 
-Source checkouts use the OpenClaw pnpm workspace. Keep hackable/dev-channel copy
+Source checkouts use the DaoCore pnpm workspace. Keep hackable/dev-channel copy
 pointing at `pnpm install`; root `npm install` is for packaged installs, not
 source trees.
 
@@ -71,6 +71,6 @@ Troubleshooting:
 
 ## Related
 
-- [OpenClaw](https://github.com/openclaw/openclaw) — Main repository
-- [Docs](https://docs.openclaw.ai) — Documentation
+- [DaoCore](https://github.com/openclaw/openclaw) — Main repository
+- [Docs](https://docs.daocore.ai) — Documentation
 - [Discord](https://discord.gg/openclaw) — Community

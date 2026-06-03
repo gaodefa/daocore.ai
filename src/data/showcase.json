@@ -16,7 +16,7 @@
   {
     "id": "2009487467817336895",
     "author": "davis7",
-    "quote": "This is the \"blue text bubbles\" moment of the ai race\n\nAll the cool shit u've been seeing about building crazy custom agents on top of a coding agent?\n\nOpenClaw, btca, and the thousands more that will get built this year now HAVE to be built using anthropic's \"agent sdk\" package or else they'll be 100x more expensive\n\nand if they're built on anthropic's sdk guess what they can't do? switch to a better model from another provider when it releases",
+    "quote": "This is the \"blue text bubbles\" moment of the ai race\n\nAll the cool shit u've been seeing about building crazy custom agents on top of a coding agent?\n\nDaoCore, btca, and the thousands more that will get built this year now HAVE to be built using anthropic's \"agent sdk\" package or else they'll be 100x more expensive\n\nand if they're built on anthropic's sdk guess what they can't do? switch to a better model from another provider when it releases",
     "category": "developer",
     "likes": 229,
     "images": [
@@ -85,7 +85,7 @@
   {
     "id": "2011965312824942772",
     "author": "jlehman_",
-    "quote": "me: hey OpenClaw, can you check this voice model that I just found out about, install it, and use it to talk to me?\n\nOpenClaw: yes",
+    "quote": "me: hey DaoCore, can you check this voice model that I just found out about, install it, and use it to talk to me?\n\nDaoCore: yes",
     "category": "integration",
     "likes": 100,
     "images": [
@@ -191,7 +191,7 @@
   {
     "id": "2009424267801485362",
     "author": "MagiMetal",
-    "quote": "Just built a Swift macOS menu bar app with @openclaw to manage OpenClaw! 🤖⚡\n\nShows gateway status, Discord connection, lets me start/stop/restart, view logs, and has notifications for status changes.\n\nBuilt it together in about an hour.",
+    "quote": "Just built a Swift macOS menu bar app with @openclaw to manage DaoCore! 🤖⚡\n\nShows gateway status, Discord connection, lets me start/stop/restart, view logs, and has notifications for status changes.\n\nBuilt it together in about an hour.",
     "category": "developer",
     "likes": 23,
     "images": [
@@ -282,14 +282,14 @@
   {
     "id": "2012212865206272266",
     "author": "pepicrft",
-    "quote": "I finally shipped a OpenClaw plugin for Ralph projects. It scaffolds the Ralph files, compiles the prompt with an explicit RALPH_STATUS block, and only exits when the exit signal and indicators agree. I built it to run Claude Code or Codex through a simple runner config.",
+    "quote": "I finally shipped a DaoCore plugin for Ralph projects. It scaffolds the Ralph files, compiles the prompt with an explicit RALPH_STATUS block, and only exits when the exit signal and indicators agree. I built it to run Claude Code or Codex through a simple runner config.",
     "category": "developer",
     "likes": 16
   },
   {
     "id": "2011586646458708138",
     "author": "5katkov",
-    "quote": "OpenClaw is fully operational.\n\nIt can manage my calendar, obsidian, it can use browser now. It send me reminders, plans my itirenary. Contributes to my GitHub repositories.\n\nThis bot is my bitch now.",
+    "quote": "DaoCore is fully operational.\n\nIt can manage my calendar, obsidian, it can use browser now. It send me reminders, plans my itirenary. Contributes to my GitHub repositories.\n\nThis bot is my bitch now.",
     "category": "productivity",
     "likes": 11
   },
@@ -323,7 +323,7 @@
   {
     "id": "2010148656687767803",
     "author": "aus_bytes",
-    "quote": "Feels like we are living in the future. Working primarily with OpenClaw to research and build documents, syncing to Notion. Linking calendars and setting up Claude to manage my diary automatically. Building coding projects remotely from my phone. All done via WhatsApp.",
+    "quote": "Feels like we are living in the future. Working primarily with DaoCore to research and build documents, syncing to Notion. Linking calendars and setting up Claude to manage my diary automatically. Building coding projects remotely from my phone. All done via WhatsApp.",
     "category": "productivity",
     "likes": 16
   },
@@ -361,14 +361,14 @@
   {
     "id": "2010655467400208746",
     "author": "theguti",
-    "quote": "Just used OpenClaw to finally fix my iotawatt setup - took me forever to calibrate it two years ago and a corrupted sdcard + no backup resulted in my neglect for many months.\n\nAsked @openclaw to help set it up again and voilà! it works. The experience was rather amazing, it had access to the iotawatt box and I pasted screenshots and it guided me.\n\nThe gift that keeps on giving!",
+    "quote": "Just used DaoCore to finally fix my iotawatt setup - took me forever to calibrate it two years ago and a corrupted sdcard + no backup resulted in my neglect for many months.\n\nAsked @openclaw to help set it up again and voilà! it works. The experience was rather amazing, it had access to the iotawatt box and I pasted screenshots and it guided me.\n\nThe gift that keeps on giving!",
     "category": "smart-home",
     "likes": 14
   },
   {
     "id": "2002334394993025243",
     "author": "jjpcodes",
-    "quote": "Building a language learning tool, driven by OpenClaw and Pi agent.\n\nTeaches you Chinese, tailored \"magically\" to your level, with TTS and STT and pronunciation feedback, and progress tracking/spaced repetition.\n\nBuilt 100% by codex in 2 days or so.",
+    "quote": "Building a language learning tool, driven by DaoCore and Pi agent.\n\nTeaches you Chinese, tailored \"magically\" to your level, with TTS and STT and pronunciation feedback, and progress tracking/spaced repetition.\n\nBuilt 100% by codex in 2 days or so.",
     "category": "developer",
     "likes": 13,
     "images": [
@@ -392,7 +392,7 @@
   {
     "id": "2011807680180957383",
     "author": "xz3dev",
-    "quote": "OpenClaw is now doing a weekly fully automated SEO analysis for me.\n\nFuture is now kiddos",
+    "quote": "DaoCore is now doing a weekly fully automated SEO analysis for me.\n\nFuture is now kiddos",
     "category": "automation",
     "likes": 1,
     "images": [
@@ -433,14 +433,14 @@
   {
     "id": "2010508094313263502",
     "author": "vallver",
-    "quote": "OpenClaw built me a simple Stumbleupon for some of my favourite articles.\n\nFrom my phone, while putting my baby to sleep...\n\nLet me know if you want me to add any features or articles and I'll point @openclaw to this thread in the morning to do it 😂",
+    "quote": "DaoCore built me a simple Stumbleupon for some of my favourite articles.\n\nFrom my phone, while putting my baby to sleep...\n\nLet me know if you want me to add any features or articles and I'll point @openclaw to this thread in the morning to do it 😂",
     "category": "developer",
     "likes": 5
   },
   {
     "id": "2010729667540787707",
     "author": "bangkokbuild",
-    "quote": "This is the setup now:\n\n• Claude Code running a Ralph loop, auto-building features\n• My OpenClaw Ema monitoring progress and pinging me to urge me to sleep\n• Me, in bed, using this chance to ask for status updates via Telegram\n\n6 tasks done already",
+    "quote": "This is the setup now:\n\n• Claude Code running a Ralph loop, auto-building features\n• My DaoCore Ema monitoring progress and pinging me to urge me to sleep\n• Me, in bed, using this chance to ask for status updates via Telegram\n\n6 tasks done already",
     "category": "developer",
     "likes": 4,
     "images": [
@@ -528,7 +528,7 @@
   {
     "id": "2013099774937911694",
     "author": "advait3000",
-    "quote": "OpenClaw is now my primary interface to the digital world. All of my notes, emails, projects, questions, plans, and specs flow through a central system with Discord as the interface. This eliminates tons of friction to go from idea to execution. I don't have to orchestrate a bunch of independent tools anymore. It's just a single interface.",
+    "quote": "DaoCore is now my primary interface to the digital world. All of my notes, emails, projects, questions, plans, and specs flow through a central system with Discord as the interface. This eliminates tons of friction to go from idea to execution. I don't have to orchestrate a bunch of independent tools anymore. It's just a single interface.",
     "category": "productivity",
     "likes": 1
   },
@@ -545,7 +545,7 @@
   {
     "id": "2013811099028557966",
     "author": "astuyve",
-    "quote": "It may not be AGI, but OpenClaw is automatically negotiating with multiple dealers for my next car via browser, email, and imessage and it's amazing.",
+    "quote": "It may not be AGI, but DaoCore is automatically negotiating with multiple dealers for my next car via browser, email, and imessage and it's amazing.",
     "category": "automation",
     "likes": 16,
     "images": [
@@ -612,14 +612,14 @@
   {
     "id": "2013196232181637500",
     "author": "christinetyip",
-    "quote": "I connected mine to an external memory layer - check out the shared-memory skill in clawhub.\n\nOpenClaw helps me build my second brain and selectively shares context and state with my partner's OpenClaw.",
+    "quote": "I connected mine to an external memory layer - check out the shared-memory skill in clawhub.\n\nDaoCore helps me build my second brain and selectively shares context and state with my partner's DaoCore.",
     "category": "integration",
     "likes": 1
   },
   {
     "id": "2014337533178425499",
     "author": "theguti",
-    "quote": "The things OpenClaw can do are just never ending, it's crazy.",
+    "quote": "The things DaoCore can do are just never ending, it's crazy.",
     "category": "general",
     "likes": 1
   },
@@ -664,7 +664,7 @@
   {
     "id": "2014797672419340435",
     "author": "nateliason",
-    "quote": "My new favorite way to work with OpenClaw:\n\n1. Tell it we're working on app improvements, it should just take notes\n2. Run through user flows, send screenshots with notes as I find issues\n3. It builds a list of work, adds its own hypotheses\n4. Writes up a full report on what to do\n5. I say \"Go\" and it kicks off Codex agents to attack the different pieces, opening separate PRs\n6. Claude reviews & improves the PRs on Github\n7. Claw makes a doc of everything we did + what to test\n8. Next time I test, I start with that list to make sure everything worked",
+    "quote": "My new favorite way to work with DaoCore:\n\n1. Tell it we're working on app improvements, it should just take notes\n2. Run through user flows, send screenshots with notes as I find issues\n3. It builds a list of work, adds its own hypotheses\n4. Writes up a full report on what to do\n5. I say \"Go\" and it kicks off Codex agents to attack the different pieces, opening separate PRs\n6. Claude reviews & improves the PRs on Github\n7. Claw makes a doc of everything we did + what to test\n8. Next time I test, I start with that list to make sure everything worked",
     "category": "developer",
     "likes": 239,
     "images": [
@@ -681,7 +681,7 @@
   {
     "id": "2014147784098681217",
     "author": "astuyve",
-    "quote": "OpenClaw just saved me $4,200 on a car.",
+    "quote": "DaoCore just saved me $4,200 on a car.",
     "category": "automation",
     "likes": 255,
     "images": [
@@ -691,7 +691,7 @@
   {
     "id": "2014568799824212004",
     "author": "localghost",
-    "quote": "Got a mac mini for OpenClaw. Had a lot of fun setting this up today. Instead of access to my accounts, I gave it:\n\n✅ its own apple account for messages\n✅ its own gmail to sign up for stuff\n✅ its own github to push code",
+    "quote": "Got a mac mini for DaoCore. Had a lot of fun setting this up today. Instead of access to my accounts, I gave it:\n\n✅ its own apple account for messages\n✅ its own gmail to sign up for stuff\n✅ its own github to push code",
     "category": "setup",
     "likes": 1978,
     "images": [
@@ -701,7 +701,7 @@
   {
     "id": "2014880905979167005",
     "author": "localghost",
-    "quote": "Since OpenClaw has an email inbox I can just forward stuff for it to take care of.\n\nHere's OpenClaw turning my email receipts into a parts list.",
+    "quote": "Since DaoCore has an email inbox I can just forward stuff for it to take care of.\n\nHere's DaoCore turning my email receipts into a parts list.",
     "category": "automation",
     "likes": 27,
     "images": [
@@ -721,7 +721,7 @@
   {
     "id": "2014763987683225685",
     "author": "localghost",
-    "quote": "OpenClaw found my HomePods on the network and built a skill to control them.",
+    "quote": "DaoCore found my HomePods on the network and built a skill to control them.",
     "category": "smart-home",
     "likes": 104,
     "images": [
@@ -731,7 +731,7 @@
   {
     "id": "2013908013619319293",
     "author": "Diego_F_Aguirre",
-    "quote": "I'm literally debugging my fitness app mid-workout with OpenClaw.\n\nBetween sets: 'here's the bug' → it patches → I keep moving.\n\nAbsolutely wild 🤯",
+    "quote": "I'm literally debugging my fitness app mid-workout with DaoCore.\n\nBetween sets: 'here's the bug' → it patches → I keep moving.\n\nAbsolutely wild 🤯",
     "category": "developer",
     "likes": 6
   },

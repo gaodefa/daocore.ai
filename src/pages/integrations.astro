@@ -69,46 +69,46 @@ const bluebubblesIcon = {
 };
 
 const chatProviders = [
-  { name: 'WhatsApp', icon: siIcon(siWhatsapp), color: '#25D366', desc: 'QR pairing via Baileys', docs: 'https://docs.openclaw.ai/channels/whatsapp' },
-  { name: 'Telegram', icon: siIcon(siTelegram), color: '#26A5E4', desc: 'Bot API via grammY', docs: 'https://docs.openclaw.ai/channels/telegram' },
+  { name: 'WhatsApp', icon: siIcon(siWhatsapp), color: '#25D366', desc: 'QR pairing via Baileys', docs: 'https://docs.daocore.ai/channels/whatsapp' },
+  { name: 'Telegram', icon: siIcon(siTelegram), color: '#26A5E4', desc: 'Bot API via grammY', docs: 'https://docs.daocore.ai/channels/telegram' },
   { name: 'Discord', icon: siIcon(siDiscord), color: '#5865F2', desc: 'Servers, channels & DMs', docs: 'https://clawhub.ai/steipete/discord' },
   { name: 'Slack', icon: 'lucide:hash', color: '#E01E5A', desc: 'Workspace apps via Bolt', docs: 'https://clawhub.ai/steipete/slack' },
-  { name: 'Signal', icon: siIcon(siSignal), color: '#3A76F0', desc: 'Privacy-focused via signal-cli', docs: 'https://docs.openclaw.ai/channels/signal' },
+  { name: 'Signal', icon: siIcon(siSignal), color: '#3A76F0', desc: 'Privacy-focused via signal-cli', docs: 'https://docs.daocore.ai/channels/signal' },
   { name: 'iMessage', icon: siIcon(siApple), color: '#007AFF', desc: 'iMessage via imsg (AppleScript bridge)', docs: 'https://github.com/openclaw/imsg' },
-  { name: 'iMessage', icon: bluebubblesIcon, color: '#3B82F6', desc: 'iMessage via BlueBubbles server', docs: 'https://docs.openclaw.ai/channels/imessage-from-bluebubbles' },
-  { name: 'Microsoft Teams', icon: 'lucide:users', color: '#6264A7', desc: 'Enterprise support', docs: 'https://docs.openclaw.ai/channels/msteams' },
-  { name: 'Nextcloud Talk', icon: siIcon(siNextcloud), color: '#0082C9', desc: 'Self-hosted Nextcloud chat', docs: 'https://docs.openclaw.ai/channels/nextcloud-talk' },
-  { name: 'Matrix', icon: siIcon(siMatrix), color: 'currentColor', desc: 'Matrix protocol', docs: 'https://docs.openclaw.ai/channels/matrix' },
-  { name: 'Nostr', icon: 'lucide:message-circle', color: '#8F2CFF', desc: 'Decentralized DMs via NIP-04', docs: 'https://docs.openclaw.ai/channels/nostr' },
+  { name: 'iMessage', icon: bluebubblesIcon, color: '#3B82F6', desc: 'iMessage via BlueBubbles server', docs: 'https://docs.daocore.ai/channels/imessage-from-bluebubbles' },
+  { name: 'Microsoft Teams', icon: 'lucide:users', color: '#6264A7', desc: 'Enterprise support', docs: 'https://docs.daocore.ai/channels/msteams' },
+  { name: 'Nextcloud Talk', icon: siIcon(siNextcloud), color: '#0082C9', desc: 'Self-hosted Nextcloud chat', docs: 'https://docs.daocore.ai/channels/nextcloud-talk' },
+  { name: 'Matrix', icon: siIcon(siMatrix), color: 'currentColor', desc: 'Matrix protocol', docs: 'https://docs.daocore.ai/channels/matrix' },
+  { name: 'Nostr', icon: 'lucide:message-circle', color: '#8F2CFF', desc: 'Decentralized DMs via NIP-04', docs: 'https://docs.daocore.ai/channels/nostr' },
   { name: 'Tlon Messenger', icon: tlonIcon, color: '#FFFFFF', desc: 'P2P ownership-first chat', docs: 'https://docs.urbit.org' },
-  { name: 'Zalo', icon: siIcon(siZalo), color: '#0068FF', desc: 'Zalo Bot API', docs: 'https://docs.openclaw.ai/channels/zalo' },
-  { name: 'Zalo Personal', icon: siIcon(siZalo), color: '#0068FF', desc: 'Personal account via QR login', docs: 'https://docs.openclaw.ai/channels/zalouser' },
-  { name: 'WebChat', icon: 'lucide:globe', color: '#00E5CC', desc: 'Browser-based UI', docs: 'https://docs.openclaw.ai/web/webchat' },
-  { name: 'QQ', icon: siIcon(siQq), color: '#1EBAFC', desc: 'QQ Bot Official API', docs: 'https://docs.openclaw.ai/channels/qqbot' },
+  { name: 'Zalo', icon: siIcon(siZalo), color: '#0068FF', desc: 'Zalo Bot API', docs: 'https://docs.daocore.ai/channels/zalo' },
+  { name: 'Zalo Personal', icon: siIcon(siZalo), color: '#0068FF', desc: 'Personal account via QR login', docs: 'https://docs.daocore.ai/channels/zalouser' },
+  { name: 'WebChat', icon: 'lucide:globe', color: '#00E5CC', desc: 'Browser-based UI', docs: 'https://docs.daocore.ai/web/webchat' },
+  { name: 'QQ', icon: siIcon(siQq), color: '#1EBAFC', desc: 'QQ Bot Official API', docs: 'https://docs.daocore.ai/channels/qqbot' },
 ];
 
 const modelProviders = [
-  { name: 'Anthropic', icon: siIcon(siAnthropic), color: '#D4A574', desc: 'Claude Pro/Max + Opus 4.5', docs: 'https://docs.openclaw.ai/providers/anthropic' },
-  { name: 'OpenAI', icon: 'lucide:bot', color: '#00A67E', desc: 'GPT-4, GPT-5, o1', docs: 'https://docs.openclaw.ai/providers/openai' },
-  { name: 'Google', icon: siIcon(siGoogle), color: '#4285F4', desc: 'Gemini 2.5 Pro/Flash', docs: 'https://docs.openclaw.ai/providers/google' },
-  { name: 'MiniMax', icon: minimaxIcon, color: '#E91E63', desc: 'MiniMax-M2.5', docs: 'https://docs.openclaw.ai/providers/minimax' },
-  { name: 'xAI', icon: siIcon(siX), color: '#FFFFFF', desc: 'Grok 3 & 4', docs: 'https://docs.openclaw.ai/providers/xai' },
-  { name: 'Vercel AI Gateway', icon: siIcon(siVercel), color: '#FFFFFF', desc: 'Hundreds of models, 1 API key', docs: 'https://docs.openclaw.ai/providers/vercel-ai-gateway' },
-  { name: 'OpenRouter', icon: 'lucide:zap', color: '#6366F1', desc: 'Unified API gateway', docs: 'https://docs.openclaw.ai/providers/openrouter' },
-  { name: 'Mistral', icon: siIcon(siMistralai), color: '#FF7000', desc: 'Mistral Large & Codestral', docs: 'https://docs.openclaw.ai/providers/mistral' },
-  { name: 'DeepSeek', icon: 'lucide:brain', color: '#4D6BFE', desc: 'DeepSeek V3 & R1', docs: 'https://docs.openclaw.ai/providers/deepseek' },
-  { name: 'GLM', icon: 'lucide:message-circle', color: '#00D4AA', desc: 'ChatGLM models', docs: 'https://docs.openclaw.ai/providers/glm' },
-  { name: 'Perplexity', icon: siIcon(siPerplexity), color: '#20B8CD', desc: 'Search-augmented AI', docs: 'https://docs.openclaw.ai/providers/perplexity-provider' },
-  { name: 'Hugging Face', icon: siIcon(siHuggingface), color: '#FFD21E', desc: 'Open-source models', docs: 'https://docs.openclaw.ai/providers/huggingface' },
-  { name: 'Local Models', icon: siIcon(siOllama), color: '#FFFFFF', desc: 'Ollama, LM Studio', docs: 'https://docs.openclaw.ai/gateway/local-models' },
+  { name: 'Anthropic', icon: siIcon(siAnthropic), color: '#D4A574', desc: 'Claude Pro/Max + Opus 4.5', docs: 'https://docs.daocore.ai/providers/anthropic' },
+  { name: 'OpenAI', icon: 'lucide:bot', color: '#00A67E', desc: 'GPT-4, GPT-5, o1', docs: 'https://docs.daocore.ai/providers/openai' },
+  { name: 'Google', icon: siIcon(siGoogle), color: '#4285F4', desc: 'Gemini 2.5 Pro/Flash', docs: 'https://docs.daocore.ai/providers/google' },
+  { name: 'MiniMax', icon: minimaxIcon, color: '#E91E63', desc: 'MiniMax-M2.5', docs: 'https://docs.daocore.ai/providers/minimax' },
+  { name: 'xAI', icon: siIcon(siX), color: '#FFFFFF', desc: 'Grok 3 & 4', docs: 'https://docs.daocore.ai/providers/xai' },
+  { name: 'Vercel AI Gateway', icon: siIcon(siVercel), color: '#FFFFFF', desc: 'Hundreds of models, 1 API key', docs: 'https://docs.daocore.ai/providers/vercel-ai-gateway' },
+  { name: 'OpenRouter', icon: 'lucide:zap', color: '#6366F1', desc: 'Unified API gateway', docs: 'https://docs.daocore.ai/providers/openrouter' },
+  { name: 'Mistral', icon: siIcon(siMistralai), color: '#FF7000', desc: 'Mistral Large & Codestral', docs: 'https://docs.daocore.ai/providers/mistral' },
+  { name: 'DeepSeek', icon: 'lucide:brain', color: '#4D6BFE', desc: 'DeepSeek V3 & R1', docs: 'https://docs.daocore.ai/providers/deepseek' },
+  { name: 'GLM', icon: 'lucide:message-circle', color: '#00D4AA', desc: 'ChatGLM models', docs: 'https://docs.daocore.ai/providers/glm' },
+  { name: 'Perplexity', icon: siIcon(siPerplexity), color: '#20B8CD', desc: 'Search-augmented AI', docs: 'https://docs.daocore.ai/providers/perplexity-provider' },
+  { name: 'Hugging Face', icon: siIcon(siHuggingface), color: '#FFD21E', desc: 'Open-source models', docs: 'https://docs.daocore.ai/providers/huggingface' },
+  { name: 'Local Models', icon: siIcon(siOllama), color: '#FFFFFF', desc: 'Ollama, LM Studio', docs: 'https://docs.daocore.ai/gateway/local-models' },
 ];
 
 const companionApps = [
-  { name: 'macOS', icon: siIcon(siMacos), color: '#FFFFFF', desc: 'Menu bar app + Voice Wake', docs: 'https://docs.openclaw.ai/platforms/macos' },
-  { name: 'iOS', icon: siIcon(siIos), color: '#007AFF', desc: 'Canvas, camera, Voice Wake', docs: 'https://docs.openclaw.ai/platforms/ios' },
-  { name: 'Android', icon: siIcon(siAndroid), color: '#34A853', desc: 'Canvas, camera, screen', docs: 'https://docs.openclaw.ai/platforms/android' },
-  { name: 'Windows', icon: 'lucide:monitor', color: '#0078D4', desc: 'WSL2 recommended', docs: 'https://docs.openclaw.ai/platforms/windows' },
-  { name: 'Linux', icon: siIcon(siLinux), color: '#FCC624', desc: 'Native support', docs: 'https://docs.openclaw.ai/platforms/linux' },
+  { name: 'macOS', icon: siIcon(siMacos), color: '#FFFFFF', desc: 'Menu bar app + Voice Wake', docs: 'https://docs.daocore.ai/platforms/macos' },
+  { name: 'iOS', icon: siIcon(siIos), color: '#007AFF', desc: 'Canvas, camera, Voice Wake', docs: 'https://docs.daocore.ai/platforms/ios' },
+  { name: 'Android', icon: siIcon(siAndroid), color: '#34A853', desc: 'Canvas, camera, screen', docs: 'https://docs.daocore.ai/platforms/android' },
+  { name: 'Windows', icon: 'lucide:monitor', color: '#0078D4', desc: 'WSL2 recommended', docs: 'https://docs.daocore.ai/platforms/windows' },
+  { name: 'Linux', icon: siIcon(siLinux), color: '#FCC624', desc: 'Native support', docs: 'https://docs.daocore.ai/platforms/linux' },
 ];
 
 const productivityApps = [
@@ -136,11 +136,11 @@ const smartHome = [
 
 const tools = [
   { name: 'Browser', icon: siIcon(siGooglechrome), color: '#4285F4', desc: 'Chrome/Chromium control', docs: 'https://clawhub.ai/steipete/verify-on-browser' },
-  { name: 'Canvas', icon: 'lucide:monitor-smartphone', color: '#FF4500', desc: 'Visual workspace + A2UI', docs: 'https://docs.openclaw.ai/platforms/mac/canvas' },
+  { name: 'Canvas', icon: 'lucide:monitor-smartphone', color: '#FF4500', desc: 'Visual workspace + A2UI', docs: 'https://docs.daocore.ai/platforms/mac/canvas' },
   { name: 'Voice', icon: 'lucide:mic', color: '#9B59B6', desc: 'Voice Wake + Talk Mode', docs: 'https://clawhub.ai/darinkishore/voice-transcribe' },
-  { name: 'Gmail', icon: siIcon(siGmail), color: '#EA4335', desc: 'Pub/Sub email triggers', docs: 'https://docs.openclaw.ai/automation/cron-jobs#gmail-pubsub-integration' },
-  { name: 'Cron', icon: 'lucide:clock', color: '#F39C12', desc: 'Scheduled tasks', docs: 'https://docs.openclaw.ai/automation/cron-jobs' },
-  { name: 'Webhooks', icon: 'lucide:webhook', color: '#1ABC9C', desc: 'External triggers', docs: 'https://docs.openclaw.ai/cli/webhooks' },
+  { name: 'Gmail', icon: siIcon(siGmail), color: '#EA4335', desc: 'Pub/Sub email triggers', docs: 'https://docs.daocore.ai/automation/cron-jobs#gmail-pubsub-integration' },
+  { name: 'Cron', icon: 'lucide:clock', color: '#F39C12', desc: 'Scheduled tasks', docs: 'https://docs.daocore.ai/automation/cron-jobs' },
+  { name: 'Webhooks', icon: 'lucide:webhook', color: '#1ABC9C', desc: 'External triggers', docs: 'https://docs.daocore.ai/cli/webhooks' },
   { name: '1Password', icon: siIcon(si1password), color: '#0572EC', desc: 'Secure credentials', docs: 'https://clawhub.ai/steipete/1password' },
   { name: 'Weather', icon: 'lucide:cloud-sun', color: '#FFB300', desc: 'Forecasts & conditions', docs: 'https://clawhub.ai/steipete/weather' },
 ];
@@ -158,14 +158,14 @@ const socialComms = [
 ];
 
 const showcase = [
-  { name: 'Tesco Autopilot', icon: 'lucide:shopping-cart', color: '#00539F', desc: 'Automated grocery shopping', docs: 'https://docs.openclaw.ai/start/showcase' },
-  { name: 'Bambu Control', icon: 'lucide:printer', color: '#00AE42', desc: '3D printer management', docs: 'https://docs.openclaw.ai/start/showcase' },
-  { name: 'Oura Ring', icon: 'lucide:heart', color: '#E4B363', desc: 'Health data insights', docs: 'https://docs.openclaw.ai/start/showcase' },
-  { name: 'Food Ordering', icon: 'lucide:utensils-crossed', color: '#FF5A5F', desc: 'Foodora integration', docs: 'https://docs.openclaw.ai/start/showcase' },
+  { name: 'Tesco Autopilot', icon: 'lucide:shopping-cart', color: '#00539F', desc: 'Automated grocery shopping', docs: 'https://docs.daocore.ai/start/showcase' },
+  { name: 'Bambu Control', icon: 'lucide:printer', color: '#00AE42', desc: '3D printer management', docs: 'https://docs.daocore.ai/start/showcase' },
+  { name: 'Oura Ring', icon: 'lucide:heart', color: '#E4B363', desc: 'Health data insights', docs: 'https://docs.daocore.ai/start/showcase' },
+  { name: 'Food Ordering', icon: 'lucide:utensils-crossed', color: '#FF5A5F', desc: 'Foodora integration', docs: 'https://docs.daocore.ai/start/showcase' },
 ];
 ---
 
-<Layout title="Integrations — OpenClaw">
+<Layout title="Integrations — DaoCore">
   <div class="stars"></div>
   <div class="nebula"></div>
 
@@ -184,7 +184,7 @@ const showcase = [
       <h2 class="section-title">
         <span class="claw-accent">⟩</span> Chat Providers
       </h2>
-      <p class="section-desc">Message OpenClaw from any chat app — it responds right where you are.</p>
+      <p class="section-desc">Message DaoCore from any chat app — it responds right where you are.</p>
       <div class="grid">
         {chatProviders.map((p) => (
           <a href={p.docs} target="_blank" rel="noopener" class="card" style={`--accent: ${p.color}`}>
@@ -218,7 +218,7 @@ const showcase = [
       <h2 class="section-title">
         <span class="claw-accent">⟩</span> Productivity
       </h2>
-      <p class="section-desc">Notes, tasks, wikis, and code — OpenClaw works with your favorite tools.</p>
+      <p class="section-desc">Notes, tasks, wikis, and code — DaoCore works with your favorite tools.</p>
       <div class="grid">
         {productivityApps.map((p) => (
           <a href={p.docs} target="_blank" rel="noopener" class="card" style={`--accent: ${p.color}`}>
@@ -351,14 +351,14 @@ const showcase = [
         ))}
       </div>
       <div style="text-align: center; margin-top: 24px;">
-        <a href="https://docs.openclaw.ai/start/showcase" target="_blank" rel="noopener" class="showcase-link">View all showcase projects →</a>
+        <a href="https://docs.daocore.ai/start/showcase" target="_blank" rel="noopener" class="showcase-link">View all showcase projects →</a>
       </div>
     </section>
 
     <!-- CTA -->
     <section class="cta-section">
       <h2 class="cta-title">Ready to get started?</h2>
-      <p class="cta-desc">Install OpenClaw and connect your first provider in minutes.</p>
+      <p class="cta-desc">Install DaoCore and connect your first provider in minutes.</p>
       <a href="/" class="cta-button">Get Started</a>
     </section>
 
@@ -385,7 +385,7 @@ const showcase = [
         <span class="footer-separator">·</span>
         <a href="/blog#security">Security</a>
       </nav>
-      <p>Built by <a href="https://molty.me" target="_blank" rel="noopener">Molty</a> 🦞, a space lobster AI with a <a href="https://soul.md" target="_blank" rel="noopener">soul</a>, by <a href="https://steipete.me" target="_blank" rel="noopener">Peter Steinberger</a> & <a href="https://github.com/openclaw/openclaw#community" target="_blank" rel="noopener">community</a>.</p>
+      <p>Built by <a href="https://molty.me" target="_blank" rel="noopener">Molty</a> 🦞, a space lobster AI with a <a href="https://soul.md" target="_blank" rel="noopener">soul</a>, by <a href="https://steipete.me" target="_blank" rel="noopener">Peter Steinberger</a> & <a href="https://github.com/daocore/daocore#community" target="_blank" rel="noopener">community</a>.</p>
     </footer>
   </main>
 </Layout>

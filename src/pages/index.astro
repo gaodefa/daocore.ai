@@ -67,7 +67,7 @@ function formatBlogDate(date: Date): string {
 }
 ---
 
-<Layout title="OpenClaw — Personal AI Assistant">
+<Layout title="DaoCore — Personal AI Assistant">
   <SiteTopbar active="home" />
   <div class="stars"></div>
   <div class="nebula"></div>
@@ -75,33 +75,23 @@ function formatBlogDate(date: Date): string {
   <main class="container">
     <!-- Hero Section -->
     <header class="hero">
-      <div class="lobster-icon" aria-hidden="true">
+      <div class="taiji-icon" aria-hidden="true">
         <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Lobster Claw Silhouette -->
-          <path d="M60 10 C30 10 15 35 15 55 C15 75 30 95 45 100 L45 110 L55 110 L55 100 C55 100 60 102 65 100 L65 110 L75 110 L75 100 C90 95 105 75 105 55 C105 35 90 10 60 10Z" fill="url(#lobster-gradient)" class="claw-body"/>
-          <!-- Left Claw -->
-          <path d="M20 45 C5 40 0 50 5 60 C10 70 20 65 25 55 C28 48 25 45 20 45Z" fill="url(#lobster-gradient)" class="claw-left"/>
-          <!-- Right Claw -->
-          <path d="M100 45 C115 40 120 50 115 60 C110 70 100 65 95 55 C92 48 95 45 100 45Z" fill="url(#lobster-gradient)" class="claw-right"/>
-          <!-- Antenna -->
-          <path d="M45 15 Q35 5 30 8" stroke="var(--coral-bright)" stroke-width="2" stroke-linecap="round" class="antenna"/>
-          <path d="M75 15 Q85 5 90 8" stroke="var(--coral-bright)" stroke-width="2" stroke-linecap="round" class="antenna"/>
-          <!-- Eyes -->
-          <circle cx="45" cy="35" r="6" fill="#050810" class="eye"/>
-          <circle cx="75" cy="35" r="6" fill="#050810" class="eye"/>
-          <circle cx="46" cy="34" r="2" fill="#00e5cc" class="eye-glow"/>
-          <circle cx="76" cy="34" r="2" fill="#00e5cc" class="eye-glow"/>
           <defs>
-            <linearGradient id="lobster-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="var(--logo-gradient-start)"/>
               <stop offset="100%" stop-color="var(--logo-gradient-end)"/>
             </linearGradient>
           </defs>
+          <circle cx="60" cy="60" r="54" fill="#050810"/>
+          <path d="M60 6 A54 54 0 0 1 60 114 A27 27 0 0 1 60 60 A27 27 0 0 0 60 6Z" fill="url(#tg)"/>
+          <circle cx="60" cy="33" r="6" fill="var(--logo-gradient-start)"/>
+          <circle cx="60" cy="87" r="6" fill="#050810"/>
         </svg>
       </div>
 
       <h1 class="title">
-        <span class="title-main">OpenClaw</span>
+        <span class="title-main">DaoCore</span>
       </h1>
 
       <p class="tagline" id="tagline">The AI that actually does things.</p>
@@ -150,7 +140,7 @@ function formatBlogDate(date: Date): string {
           <div class="code-line comment" id="oneliner-comment"># Works everywhere. On macOS, first run may need an Administrator for Homebrew.</div>
           <div class="code-line cmd">
             <span class="code-prompt">$</span>
-            <span class="os-cmd">curl -fsSL https://openclaw.ai/install.sh | bash</span>
+            <span class="os-cmd">curl -fsSL https://daocore.ai/install.sh | bash</span>
             <button class="copy-line-btn" data-cmd="oneliner" title="Copy">
               <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
               <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
@@ -158,19 +148,19 @@ function formatBlogDate(date: Date): string {
           </div>
         </div>
         <div id="code-quick" class="code-content" style="display: none;">
-          <div class="code-line comment" id="quick-comment-install"># Install OpenClaw</div>
+          <div class="code-line comment" id="quick-comment-install"># Install DaoCore</div>
           <div class="code-line cmd">
             <span class="code-prompt">$</span>
-            <span class="pm-install">npm i -g openclaw</span>
+            <span class="pm-install">npm i -g daocore</span>
             <button class="copy-line-btn" data-cmd="install" title="Copy">
               <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
               <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
           </div>
-          <div class="code-line comment" id="quick-comment-onboard"># Meet your lobster</div>
+          <div class="code-line comment" id="quick-comment-onboard"># Meet DaoCore</div>
           <div class="code-line cmd">
             <span class="code-prompt">$</span>
-            <span>openclaw onboard</span>
+            <span>daocore onboard</span>
             <button class="copy-line-btn" data-cmd="onboard" title="Copy">
               <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
               <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
@@ -182,7 +172,7 @@ function formatBlogDate(date: Date): string {
             <div class="code-line comment"># For those who read source code for fun</div>
             <div class="code-line cmd">
               <span class="code-prompt">$</span>
-              <span class="os-cmd-hackable">curl -fsSL https://openclaw.ai/install.sh | bash -s -- --install-method git</span>
+              <span class="os-cmd-hackable">curl -fsSL https://daocore.ai/install.sh | bash -s -- --install-method git</span>
               <button class="copy-line-btn" data-cmd="hackable-installer" title="Copy">
                 <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
@@ -193,7 +183,7 @@ function formatBlogDate(date: Date): string {
             <div class="code-line comment"># Source checkouts are pnpm workspaces</div>
             <div class="code-line cmd">
               <span class="code-prompt">$</span>
-              <span>git clone https://github.com/openclaw/openclaw.git</span>
+              <span>git clone https://github.com/daocore/daocore.git</span>
               <button class="copy-line-btn" data-cmd="clone" title="Copy">
                 <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
@@ -201,7 +191,7 @@ function formatBlogDate(date: Date): string {
             </div>
             <div class="code-line cmd">
               <span class="code-prompt">$</span>
-              <span>cd openclaw && corepack enable && pnpm install</span>
+              <span>cd daocore && corepack enable && pnpm install</span>
               <button class="copy-line-btn" data-cmd="build" title="Copy">
                 <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
@@ -210,7 +200,7 @@ function formatBlogDate(date: Date): string {
             <div class="code-line comment"># Run from source; bundled plugins use extensions/* deps</div>
             <div class="code-line cmd">
               <span class="code-prompt">$</span>
-              <span>pnpm openclaw onboard</span>
+              <span>pnpm daocore onboard</span>
               <button class="copy-line-btn" data-cmd="hackable-onboard" title="Copy">
                 <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
@@ -222,9 +212,9 @@ function formatBlogDate(date: Date): string {
           <div class="macos-app-content">
             <div class="macos-description">
               <span class="macos-tagline">Companion App (Beta)</span>
-              <span class="macos-subtitle">Menubar access to your lobster. Works great alongside the CLI.</span>
+              <span class="macos-subtitle">Menubar access to your DaoCore. Works great alongside the CLI.</span>
             </div>
-            <a href="https://github.com/openclaw/openclaw/releases/latest" class="macos-download-btn" target="_blank" rel="noopener">
+            <a href="https://github.com/daocore/daocore/releases/latest" class="macos-download-btn" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                 <polyline points="7 10 12 15 17 10"/>
@@ -237,15 +227,15 @@ function formatBlogDate(date: Date): string {
         </div>
       </div>
       <p class="quickstart-note">
-        Works on macOS, Linux, and Windows. The one-liner installs Node.js and everything else for you. Switch later with <code>openclaw update --channel dev</code> or <code>openclaw update --channel stable</code>.
+        Works on macOS, Linux, and Windows. The one-liner installs Node.js and everything else for you. Switch later with <code>daocore update --channel dev</code> or <code>daocore update --channel stable</code>.
       </p>
     </section>
 
     <script>
       // Windows install commands
-      const windowsCmd = 'powershell -c "irm https://openclaw.ai/install.ps1 | iex"';
-      const windowsBetaCmd = 'powershell -c "& ([scriptblock]::Create((irm https://openclaw.ai/install.ps1))) -Tag beta"';
-      const windowsGitCmd = 'powershell -c "& ([scriptblock]::Create((irm https://openclaw.ai/install.ps1))) -InstallMethod git"';
+      const windowsCmd = 'powershell -c "irm https://daocore.ai/install.ps1 | iex"';
+      const windowsBetaCmd = 'powershell -c "& ([scriptblock]::Create((irm https://daocore.ai/install.ps1))) -Tag beta"';
+      const windowsGitCmd = 'powershell -c "& ([scriptblock]::Create((irm https://daocore.ai/install.ps1))) -InstallMethod git"';
 
       // State
       let currentPm = 'npm';
@@ -290,12 +280,12 @@ function formatBlogDate(date: Date): string {
           beta: "# Living on the edge. Bugs are features you found first. 🦞"
         },
         quickInstall: {
-          stable: "# Install OpenClaw",
-          beta: "# Install OpenClaw (beta) — Fresh from the lab 🧪"
+          stable: "# Install DaoCore",
+          beta: "# Install DaoCore (beta) — Fresh from the lab 🧪"
         },
         quickOnboard: {
-          stable: "# Meet your lobster",
-          beta: "# Meet your experimental lobster"
+          stable: "# Meet DaoCore",
+          beta: "# Meet DaoCore"
         }
       };
 
@@ -305,15 +295,15 @@ function formatBlogDate(date: Date): string {
         // Update quick mode install command (with beta support)
         const betaSuffix = currentBeta ? '@beta' : '';
         const installCmd = currentPm === 'npm'
-          ? `npm i -g openclaw${betaSuffix}`
+          ? `npm i -g daocore${betaSuffix}`
           : `pnpm add -g openclaw${betaSuffix}`;
         pmInstallElements.forEach(cmd => cmd.textContent = installCmd);
         // Update one-liner OS command (with beta support)
         let onelinerCmd;
         if (currentOs === 'unix') {
           onelinerCmd = currentBeta
-            ? "curl -fsSL https://openclaw.ai/install.sh | bash -s -- --beta"
-            : "curl -fsSL https://openclaw.ai/install.sh | bash";
+            ? "curl -fsSL https://daocore.ai/install.sh | bash -s -- --beta"
+            : "curl -fsSL https://daocore.ai/install.sh | bash";
         } else {
           onelinerCmd = currentBeta ? windowsBetaCmd : windowsCmd;
         }
@@ -321,7 +311,7 @@ function formatBlogDate(date: Date): string {
         // Update hackable OS command for installer mode
         const hackableOsCmd = currentOs === 'windows'
           ? windowsGitCmd
-          : "curl -fsSL https://openclaw.ai/install.sh | bash -s -- --install-method git";
+          : "curl -fsSL https://daocore.ai/install.sh | bash -s -- --install-method git";
         osCmdHackableElements.forEach(cmd => cmd.textContent = hackableOsCmd);
         // Update hackable content visibility (null-safe)
         if (currentMode === 'hackable') {
@@ -417,23 +407,23 @@ function formatBlogDate(date: Date): string {
         'oneliner': () => {
           if (currentOs === 'unix') {
             return currentBeta
-              ? "curl -fsSL https://openclaw.ai/install.sh | bash -s -- --beta"
-              : "curl -fsSL https://openclaw.ai/install.sh | bash";
+              ? "curl -fsSL https://daocore.ai/install.sh | bash -s -- --beta"
+              : "curl -fsSL https://daocore.ai/install.sh | bash";
           } else {
             return currentBeta ? windowsBetaCmd : windowsCmd;
           }
         },
         'install': () => {
           const betaSuffix = currentBeta ? '@beta' : '';
-          return currentPm === 'npm' ? `npm i -g openclaw${betaSuffix}` : `pnpm add -g openclaw${betaSuffix}`;
+          return currentPm === 'npm' ? `npm i -g daocore${betaSuffix}` : `pnpm add -g daocore${betaSuffix}`;
         },
-        'onboard': () => 'openclaw onboard',
+        'onboard': () => 'daocore onboard',
         'hackable-installer': () => currentOs === 'windows'
           ? windowsGitCmd
-          : "curl -fsSL https://openclaw.ai/install.sh | bash -s -- --install-method git",
-        'clone': () => 'git clone https://github.com/openclaw/openclaw.git',
-        'build': () => 'cd openclaw && corepack enable && pnpm install',
-        'hackable-onboard': () => 'pnpm openclaw onboard',
+          : "curl -fsSL https://daocore.ai/install.sh | bash -s -- --install-method git",
+        'clone': () => 'git clone https://github.com/daocore/daocore.git',
+        'build': () => 'cd daocore && corepack enable && pnpm install',
+        'hackable-onboard': () => 'pnpm daocore onboard',
       };
 
       document.querySelectorAll('.copy-line-btn').forEach(btn => {
@@ -491,14 +481,14 @@ function formatBlogDate(date: Date): string {
       });
 
       // Easter egg: Dalek mode on lobster hover (null-safe)
-      const lobsterIcon = document.querySelector('.lobster-icon');
+      const taijiIcon = document.querySelector('.taiji-icon');
       const tagline = document.getElementById('tagline');
       
-      if (lobsterIcon && tagline) {
+      if (taijiIcon && tagline) {
         const originalTagline = tagline.textContent;
         let isAnimating = false;
 
-        lobsterIcon.addEventListener('mouseenter', () => {
+        taijiIcon.addEventListener('mouseenter', () => {
           if (isAnimating) return;
           isAnimating = true;
 
@@ -608,7 +598,7 @@ function formatBlogDate(date: Date): string {
     <section class="features">
       <SectionHeader title="What It Does" />
       <div class="features-grid">
-        <a href="https://docs.openclaw.ai/getting-started" target="_blank" rel="noopener" class="feature-card">
+        <a href="https://docs.daocore.ai/getting-started" target="_blank" rel="noopener" class="feature-card">
           <div class="feature-icon"><Icon icon="lucide:home" color="var(--coral-bright)" size={28} /></div>
           <h3 class="feature-title">Runs on Your Machine</h3>
           <p class="feature-desc">Mac, Windows, or Linux. Anthropic, OpenAI, or local models. Private by default—your data stays yours.</p>
@@ -618,22 +608,22 @@ function formatBlogDate(date: Date): string {
           <h3 class="feature-title">Any Chat App</h3>
           <p class="feature-desc">Talk to it on WhatsApp, Telegram, Discord, Slack, Signal, or iMessage. Works in DMs and group chats.</p>
         </a>
-        <a href="https://docs.openclaw.ai/session" target="_blank" rel="noopener" class="feature-card">
+        <a href="https://docs.daocore.ai/session" target="_blank" rel="noopener" class="feature-card">
           <div class="feature-icon"><Icon icon="lucide:brain" color="var(--coral-bright)" size={28} /></div>
           <h3 class="feature-title">Persistent Memory</h3>
           <p class="feature-desc">Remembers you and becomes uniquely yours. Your preferences, your context, your AI.</p>
         </a>
-        <a href="https://docs.openclaw.ai/browser" target="_blank" rel="noopener" class="feature-card">
+        <a href="https://docs.daocore.ai/browser" target="_blank" rel="noopener" class="feature-card">
           <div class="feature-icon"><Icon icon="lucide:globe" color="var(--coral-bright)" size={28} /></div>
           <h3 class="feature-title">Browser Control</h3>
           <p class="feature-desc">It can browse the web, fill forms, and extract data from any site.</p>
         </a>
-        <a href="https://docs.openclaw.ai/bash" target="_blank" rel="noopener" class="feature-card">
+        <a href="https://docs.daocore.ai/bash" target="_blank" rel="noopener" class="feature-card">
           <div class="feature-icon"><Icon icon="lucide:terminal" color="var(--coral-bright)" size={28} /></div>
           <h3 class="feature-title">Full System Access</h3>
           <p class="feature-desc">Read and write files, run shell commands, execute scripts. Full access or sandboxed—your choice.</p>
         </a>
-        <a href="https://docs.openclaw.ai/skills" target="_blank" rel="noopener" class="feature-card">
+        <a href="https://docs.daocore.ai/skills" target="_blank" rel="noopener" class="feature-card">
           <div class="feature-icon"><Icon icon="lucide:puzzle" color="var(--coral-bright)" size={28} /></div>
           <h3 class="feature-title">Skills & Plugins</h3>
           <p class="feature-desc">Extend with community skills or build your own. It can even write its own.</p>
@@ -663,7 +653,7 @@ function formatBlogDate(date: Date): string {
     <section class="builds-section">
       <SectionHeader
         title="What People Are Building"
-        link={{ href: "https://docs.openclaw.ai/start/showcase", text: "View docs showcase" }}
+        link={{ href: "https://docs.daocore.ai/start/showcase", text: "View docs showcase" }}
       />
       <div class="builds-grid">
         {featuredBuilds.map((build) => (
@@ -685,7 +675,7 @@ function formatBlogDate(date: Date): string {
       <div class="build-links">
         <a href="/showcase" class="build-link">Community chatter →</a>
         <span class="link-separator">·</span>
-        <a href="https://docs.openclaw.ai/start/showcase" class="build-link" target="_blank" rel="noopener">More project examples →</a>
+        <a href="https://docs.daocore.ai/start/showcase" class="build-link" target="_blank" rel="noopener">More project examples →</a>
       </div>
     </section>
 
@@ -722,7 +712,7 @@ function formatBlogDate(date: Date): string {
         <span class="cta-sub">Join the community</span>
       </a>
 
-      <a href="https://docs.openclaw.ai/getting-started" class="cta cta-docs" target="_blank" rel="noopener">
+      <a href="https://docs.daocore.ai/getting-started" class="cta cta-docs" target="_blank" rel="noopener">
         <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
           <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
@@ -733,7 +723,7 @@ function formatBlogDate(date: Date): string {
         <span class="cta-sub">Learn the ropes</span>
       </a>
 
-      <a href="https://github.com/openclaw/openclaw" class="cta cta-github" target="_blank" rel="noopener">
+      <a href="https://github.com/daocore/daocore" class="cta cta-github" target="_blank" rel="noopener">
         <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
         </svg>
@@ -823,7 +813,7 @@ function formatBlogDate(date: Date): string {
         <span class="footer-separator">·</span>
         <a href="/blog#security">Security</a>
       </nav>
-      <p>Built by <a href="https://molty.me" target="_blank" rel="noopener">Molty</a> 🦞, a space lobster AI with a <a href="https://soul.md" target="_blank" rel="noopener">soul</a>, by <a href="https://steipete.me" target="_blank" rel="noopener">Peter Steinberger</a> & <a href="https://github.com/openclaw/openclaw#community" target="_blank" rel="noopener">community</a>.</p>
+      <p>Built by <a href="https://molty.me" target="_blank" rel="noopener">Molty</a> ☯️, by <a href="https://steipete.me" target="_blank" rel="noopener">Peter Steinberger</a> & <a href="https://github.com/daocore/daocore#community" target="_blank" rel="noopener">community</a>.</p>
       <p class="disclaimer">Independent project, not affiliated with Anthropic.</p>
     </footer>
   </main>
@@ -896,7 +886,7 @@ function formatBlogDate(date: Date): string {
     }
   }
 
-  .lobster-icon {
+  .taiji-icon {
     width: 100px;
     height: 100px;
     margin: 0 auto 24px;
@@ -905,37 +895,37 @@ function formatBlogDate(date: Date): string {
     transition: transform 0.3s ease;
   }
 
-  .lobster-icon:hover {
+  .taiji-icon:hover {
     transform: scale(1.1);
     animation: none;
   }
 
-  .lobster-icon svg {
+  .taiji-icon svg {
     width: 100%;
     height: 100%;
     filter: drop-shadow(0 0 20px var(--logo-glow));
     transition: filter 0.3s ease;
   }
 
-  .lobster-icon:hover svg {
+  .taiji-icon:hover svg {
     filter: drop-shadow(0 0 30px var(--logo-glow-hover));
   }
 
-  .lobster-icon .eye-glow {
+  .taiji-icon .eye-glow {
     animation: blink 3s ease-in-out infinite;
   }
 
-  .lobster-icon .antenna {
+  .taiji-icon .antenna {
     animation: wiggle 2s ease-in-out infinite;
     transform-origin: center;
   }
 
-  .lobster-icon .claw-left {
+  .taiji-icon .claw-left {
     animation: clawSnap 4s ease-in-out infinite;
     transform-origin: right center;
   }
 
-  .lobster-icon .claw-right {
+  .taiji-icon .claw-right {
     animation: clawSnap 4s ease-in-out infinite 0.2s;
     transform-origin: left center;
   }
@@ -2286,7 +2276,7 @@ function formatBlogDate(date: Date): string {
       padding: 40px 16px 32px;
     }
 
-    .lobster-icon {
+    .taiji-icon {
       width: 80px;
       height: 80px;
     }

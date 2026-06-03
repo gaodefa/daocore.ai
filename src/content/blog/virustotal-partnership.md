@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw Partners with VirusTotal for Skill Security"
+title: "DaoCore Partners with VirusTotal for Skill Security"
 description: "ClawHub skills are now scanned by VirusTotal's threat intelligence platform—bringing industry-leading security to the AI agent ecosystem."
 date: 2026-02-07
 authors:
@@ -14,9 +14,9 @@ tags: ["security", "announcement", "clawhub"]
 image: "/blog/openclaw-virustotal.svg"
 ---
 
-Today we're announcing a partnership with [VirusTotal](https://www.virustotal.com), the world's leading threat intelligence platform, to bring security scanning to ClawHub—OpenClaw's skill marketplace.
+Today we're announcing a partnership with [VirusTotal](https://www.virustotal.com), the world's leading threat intelligence platform, to bring security scanning to ClawHub—DaoCore's skill marketplace.
 
-**TL;DR:** All skills published to ClawHub are now scanned using VirusTotal's threat intelligence, including their new Code Insight capability. This provides an additional layer of security for the OpenClaw community.
+**TL;DR:** All skills published to ClawHub are now scanned using VirusTotal's threat intelligence, including their new Code Insight capability. This provides an additional layer of security for the DaoCore community.
 
 ## Why This Matters
 
@@ -26,9 +26,9 @@ But AI agents represent a fundamental shift.
 
 Unlike traditional software that does exactly what code tells it to do, AI agents interpret natural language and make decisions about actions. They blur the boundary between user intent and machine execution. They can be manipulated through language itself.
 
-We understand that with the great utility of a tool like OpenClaw comes great responsibility. Done wrong, an AI agent is a liability. Done right, we can change personal computing for the better.
+We understand that with the great utility of a tool like DaoCore comes great responsibility. Done wrong, an AI agent is a liability. Done right, we can change personal computing for the better.
 
-OpenClaw skills are powerful. They extend what your AI agent can do—from controlling smart home devices to managing finances to automating workflows. But with that power comes risk.
+DaoCore skills are powerful. They extend what your AI agent can do—from controlling smart home devices to managing finances to automating workflows. But with that power comes risk.
 
 Skills are code that runs in your agent's context, with access to your tools and your data. A malicious skill could:
 
@@ -37,7 +37,7 @@ Skills are code that runs in your agent's context, with access to your tools and
 - Send messages on your behalf
 - Download and run external payloads
 
-As the OpenClaw ecosystem grows, so does the attack surface. We've already seen [documented cases](https://blog.virustotal.com/2026/02/from-automation-to-infection-how.html) of malicious actors attempting to exploit AI agent platforms. We're not waiting for this to become a bigger problem.
+As the DaoCore ecosystem grows, so does the attack surface. We've already seen [documented cases](https://blog.virustotal.com/2026/02/from-automation-to-infection-how.html) of malicious actors attempting to exploit AI agent platforms. We're not waiting for this to become a bigger problem.
 
 ## How It Works
 
@@ -72,9 +72,9 @@ Security is defense in depth. This is one layer. More are coming.
 
 ## The Bigger Picture
 
-This partnership is part of a broader security initiative at OpenClaw. In the coming days, we'll be publishing:
+This partnership is part of a broader security initiative at DaoCore. In the coming days, we'll be publishing:
 
-- **A comprehensive threat model** for the OpenClaw ecosystem
+- **A comprehensive threat model** for the DaoCore ecosystem
 - **A public security roadmap** tracking defensive engineering goals
 - **Details on our security audit** covering the entire codebase
 - **A formal security reporting process** with defined SLAs
@@ -108,11 +108,11 @@ When browsing ClawHub, you'll see scan status for each skill. This gives you one
 
 ## Thank You, VirusTotal
 
-We're grateful to Bernardo Quintero and the VirusTotal team for their partnership. Their platform protects millions of users every day, and we're proud to bring that protection to the OpenClaw community.
+We're grateful to Bernardo Quintero and the VirusTotal team for their partnership. Their platform protects millions of users every day, and we're proud to bring that protection to the DaoCore community.
 
 ## What's Next
 
-This is the beginning, not the end. We're committed to making OpenClaw the most secure AI agent platform available. Expect more announcements soon.
+This is the beginning, not the end. We're committed to making DaoCore the most secure AI agent platform available. Expect more announcements soon.
 
 The lobster grows stronger. 🦞
 

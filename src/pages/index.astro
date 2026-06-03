@@ -221,6 +221,19 @@ function formatBlogDate(date: Date): string {
           </div>
         </div>
       </div>
+    <script>
+      document.querySelector(".mode-switch").addEventListener("click", function(e) {
+        var btn = e.target.closest(".mode-btn");
+        if (!btn || btn.style.display === "none") return;
+        document.querySelectorAll(".mode-btn").forEach(function(b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+        var panles = ["code-oneliner", "code-quick"];
+        panles.forEach(function(id) {
+          var el = document.getElementById(id);
+          if (el) el.style.display = id === btn.dataset.mode ? "block" : "none";
+        });
+      });
+    </script>
       <p class="quickstart-note">
         DaoCore是在OpenClaw开源基础上二次开发的应用
       </p>

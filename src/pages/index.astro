@@ -296,7 +296,7 @@ function formatBlogDate(date: Date): string {
         const betaSuffix = currentBeta ? '@beta' : '';
         const installCmd = currentPm === 'npm'
           ? `npm i -g daocore${betaSuffix}`
-          : `pnpm add -g openclaw${betaSuffix}`;
+          : `pnpm add -g daocore${betaSuffix}`;
         pmInstallElements.forEach(cmd => cmd.textContent = installCmd);
         // Update one-liner OS command (with beta support)
         let onelinerCmd;

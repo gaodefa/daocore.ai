@@ -143,20 +143,20 @@ function formatBlogDate(date: Date): string {
           </div>
         </div>
         <div id="code-quick" class="code-content" style="display: none;">
-          <div class="code-line comment" id="quick-comment-install"># Install DaoCore</div>
+          <div class="code-line comment"># 卸载全局包</div>
           <div class="code-line cmd">
             <span class="code-prompt">$</span>
-            <span class="pm-install">npm i -g openclaw</span>
-            <button class="copy-line-btn" data-cmd="install" title="Copy">
+            <span>npm uninstall -g openclaw</span>
+            <button class="copy-line-btn" data-cmd="uninstall" title="Copy">
               <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
               <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
           </div>
-          <div class="code-line comment" id="quick-comment-onboard"># Meet DaoCore</div>
+          <div class="code-line comment"># 清除配置文件</div>
           <div class="code-line cmd">
             <span class="code-prompt">$</span>
-            <span>daocore onboard</span>
-            <button class="copy-line-btn" data-cmd="onboard" title="Copy">
+            <span>rm -rf ~/.openclaw</span>
+            <button class="copy-line-btn" data-cmd="clear" title="Copy">
               <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
               <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
             </button>

@@ -113,8 +113,8 @@ function formatBlogDate(date: Date): string {
           <div class="mode-switch">
             <button class="mode-btn active" data-mode="oneliner">One-liner</button>
             <button class="mode-btn" data-mode="quick">npm</button>
-            <button class="mode-btn" data-mode="hackable">Hackable</button>
-            <button class="mode-btn" data-mode="macos">macOS</button>
+            <button style="display:none" class="mode-btn" data-mode="hackable">Hackable</button>
+            <button style="display:none" class="mode-btn" data-mode="macos">macOS</button>
           </div>
           <div class="pm-switch" id="pm-switch" style="display: none;">
             <button class="pm-btn active" data-pm="npm">npm</button>
@@ -128,12 +128,7 @@ function formatBlogDate(date: Date): string {
             <button class="os-btn active" data-os="unix">macOS & Linux</button>
             <button class="os-btn" data-os="windows">Windows</button>
           </div>
-          <div class="beta-switch" id="beta-switch">
-            <button class="beta-btn" id="beta-btn" data-beta="false">
-              <span class="beta-label">β</span>
-              <span class="beta-text">Beta</span>
-            </button>
-          </div>
+<!-- HIDDEN SECTION (removed for DaoCore brand) -->
           <div class="switch-placeholder" id="switch-placeholder" aria-hidden="true"></div>
         </div>
         <div id="code-oneliner" class="code-content">

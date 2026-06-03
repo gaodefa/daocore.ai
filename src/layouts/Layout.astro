@@ -269,7 +269,6 @@ const {
     <!-- Preloader: Nine Hand Seals animation, first home-page visit only -->
     <script is:inline>
 (()=>{
-try{if(sessionStorage.getItem('dc_loaded'))return}catch(_){}
 var pn=window.location.pathname;if(pn!=='/'&&pn!=='')return
 var ov=document.createElement('div');ov.id='dc-ov';ov.style.cssText='position:fixed;inset:0;z-index:999999;background:#050810;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none'
 var cv=document.createElement('canvas');cv.id='dc-cv';cv.style.cssText='position:fixed;inset:0;width:100%;height:100%;z-index:0'
@@ -316,7 +315,7 @@ ch.textContent=s.c;ch.style.opacity='0';ch.style.transform='scale(0.3)';iP(c)
 
 sp(s.c);if(i2===0)setTimeout(function(){sk.style.opacity='1'},200)}
 function fn(){dn=true;ch.style.display='none'
-try{sessionStorage.setItem('dc_loaded','1')}catch(_){}
+
 setTimeout(function(){ov.style.transition='opacity .6s';ov.style.opacity='0';setTimeout(function(){if(ov.parentNode)ov.parentNode.removeChild(ov);if(raF)cancelAnimationFrame(raF)},700)},1800)}
 sk.addEventListener('click',function(){if(skd||dn)return;skd=true;ch.style.transition='transform .35s cubic-bezier(.55,0,.7,.2),opacity .3s';ch.style.opacity='0';ch.style.transform='scale(0.85)';setTimeout(fn,250)})
 document.addEventListener('keydown',function(e){if(e.key==='Escape'||e.key===' '&&!dn){skd=true;ch.style.transition='transform .35s cubic-bezier(.55,0,.7,.2),opacity .3s';ch.style.opacity='0';ch.style.transform='scale(0.85)';setTimeout(fn,250)}})

@@ -239,8 +239,8 @@ function formatBlogDate(date: Date): string {
           if (!txt) return;
           navigator.clipboard.writeText(txt.textContent.trim()).then(function() {
             var c = this.querySelector(".copy-icon"), k = this.querySelector(".check-icon");
-            if (c) c.style.display = "none"; if (k) k.style.display = "block";
-            setTimeout(function() { if (c) c.style.display = ""; if (k) k.style.display = "none"; }, 2000);
+            if (c) c.style.display = "none"; if (k) k.style.display = "block"; this.classList.add("copied");
+            setTimeout(function() { this.classList.remove("copied"); if (c) c.style.display = ""; if (k) k.style.display = "none"; }.bind(this), 2000);
           }.bind(this)).catch(function() {});
         });
       });

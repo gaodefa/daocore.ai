@@ -230,7 +230,7 @@ function formatBlogDate(date: Date): string {
         var panles = ["code-oneliner", "code-quick"];
         panles.forEach(function(id) {
           var el = document.getElementById(id);
-          if (el) el.style.display = id === btn.dataset.mode ? "block" : "none";
+          if (el) el.style.display = id === "code-" + btn.dataset.mode ? "block" : "none";
         });
       });
       document.querySelectorAll(".copy-line-btn").forEach(function(btn) {

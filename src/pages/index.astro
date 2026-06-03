@@ -517,6 +517,7 @@ function formatBlogDate(date: Date): string {
     </script>
 
     <!-- People -->
+  {false && (
     <section class="testimonials">
       <SectionHeader
         title="What People Say"
@@ -560,8 +561,9 @@ function formatBlogDate(date: Date): string {
       </div>
     </section>
 
+  )}
     <!-- Latest -->
-    {latestPost && (
+    {false && (
       <section class="blog-preview">
         <div class="blog-preview-head">
           <div>
@@ -630,6 +632,7 @@ function formatBlogDate(date: Date): string {
         </a>
       </div>
     </section>
+  {false && (
 
     <!-- Integrations Preview -->
     <section class="integrations-preview">
@@ -653,6 +656,8 @@ function formatBlogDate(date: Date): string {
     <section class="builds-section">
       <SectionHeader
         title="What People Are Building"
+  )}
+  {false && (
         link={{ href: "https://docs.daocore.ai/start/showcase", text: "View docs showcase" }}
       />
       <div class="builds-grid">
@@ -681,6 +686,8 @@ function formatBlogDate(date: Date): string {
 
     <!-- Press Section -->
     <section class="press-section">
+  )}
+  {false && (
       <SectionHeader title="Featured In" link={{ href: "/press", text: "View all" }} />
       <div class="press-grid">
         {featuredPress.map((article) => (
@@ -702,6 +709,7 @@ function formatBlogDate(date: Date): string {
       </div>
     </section>
 
+  )}
     <!-- CTA Grid -->
     <nav class="cta-grid">
       <a href="https://discord.com/invite/clawd" class="cta cta-discord" target="_blank" rel="noopener">
@@ -768,6 +776,7 @@ function formatBlogDate(date: Date): string {
       </div>
     </section>
 
+  {false && (
     <!-- Sponsors -->
     <section class="sponsors">
       <h2 class="section-title">
@@ -798,6 +807,7 @@ function formatBlogDate(date: Date): string {
       </div>
     </section>
 
+  )}
     <!-- Footer -->
     <footer class="footer">
       <nav class="footer-nav">

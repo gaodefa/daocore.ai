@@ -233,6 +233,17 @@ function formatBlogDate(date: Date): string {
           if (el) el.style.display = id === btn.dataset.mode ? "block" : "none";
         });
       });
+      document.querySelectorAll(".copy-line-btn").forEach(function(btn) {
+        btn.addEventListener("click", function() {
+          var txt = this.closest(".code-line.cmd").querySelector("span.code-prompt + span") || this.closest(".code-line.cmd").querySelector("span:not(.code-prompt)");
+          if (!txt) return;
+          navigator.clipboard.writeText(txt.textContent.trim()).then(function() {
+            var c = this.querySelector(".copy-icon"), k = this.querySelector(".check-icon");
+            if (c) c.style.display = "none"; if (k) k.style.display = "block";
+            setTimeout(function() { if (c) c.style.display = ""; if (k) k.style.display = "none"; }, 2000);
+          }.bind(this)).catch(function() {});
+        });
+      });
     </script>
       <p class="quickstart-note">
         DaoCore是在OpenClaw开源基础上二次开发的应用
